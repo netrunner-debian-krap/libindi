@@ -1,0 +1,54 @@
+Source: libindi
+Section: libs
+Priority: optional
+Maintainer: Debian Krap Maintainers <debian-qt-kde@lists.debian.org>
+Uploaders: Pino Toscano <pino@debian.org>
+Build-Depends: debhelper (>= 7.0.50~),
+ cmake (>= 2.4.7),
+ libboost-dev,
+ libcfitsio3-dev,
+ libnova-dev,
+ libusb-dev,
+ zlib1g-dev
+Standards-Version: 3.9.2
+Homepage: http://indi.sourceforge.net/
+Vcs-Git: git://anonscm.debian.org/pkg-kde/krap/libindi.git
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/krap/libindi.git
+
+Package: libindi0
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Suggests: indi
+Description: ... -- shared library
+ ...
+ .
+ This package contains the shared library.
+
+Package: libindi-dev
+Section: libdevel
+Architecture: any
+Depends: libindi0 (= ${binary:Version}), ${misc:Depends}
+Description: ... -- development files
+ ...
+ .
+ This package contains development headers for the INDI library.
+
+Package: indi
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: ... -- ...
+ ...
+ .
+ ...
+
+Package: indi-dbg
+Priority: extra
+Section: debug
+Architecture: any
+Depends: libindi0 (= ${binary:Version}), ${misc:Depends}
+Description: ... -- debug symbols
+ ...
+ .
+ This package contains the debug symbols, useful to investigate problems in
+ INDI.
+
