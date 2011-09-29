@@ -5,9 +5,13 @@ Description: Respect the LIB_DESTINATION cmake variable
 Last-Update: 2011-09-29
 Forwarded: no
 
+---
+ CMakeLists.txt |   10 +++++-----
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
-@@ -20,7 +20,7 @@
+@@ -20,7 +20,7 @@ set (LIB_SUFFIX "" CACHE STRING "Define
  set (LIB_DESTINATION "${CMAKE_INSTALL_PREFIX}/lib${LIB_SUFFIX}" CACHE STRING "Library directory name")
  ## the following are directories where stuff will be installed to
  set(INCLUDE_INSTALL_DIR      "${CMAKE_INSTALL_PREFIX}/include/" CACHE PATH "The subdirectory to the header prefix")
@@ -16,7 +20,7 @@ Forwarded: no
  
  ##################  Includes  ################################
  Include (CheckCXXSourceCompiles)
-@@ -145,7 +145,7 @@
+@@ -145,7 +145,7 @@ if (CFITSIO_FOUND)
  target_link_libraries(indi ${CFITSIO_LIBRARIES})
  endif(CFITSIO_FOUND)
  
@@ -25,7 +29,7 @@ Forwarded: no
  set_target_properties(indi PROPERTIES VERSION ${CMAKE_INDI_VERSION_STRING} SOVERSION ${INDI_SOVERSION})
  
  ##################################################
-@@ -153,21 +153,21 @@
+@@ -153,21 +153,21 @@ set_target_properties(indi PROPERTIES VE
  # To link with main() for 3rd party drivers      #
  ##################################################
  add_library(indimain STATIC ${indimain_SRCS})
