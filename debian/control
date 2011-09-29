@@ -22,8 +22,12 @@ Depends: ${shlibs:Depends}, ${misc:Depends},
 Pre-Depends: ${misc:Pre-Depends}
 Suggests: indi
 Multi-Arch: same
-Description: ... -- shared library
- ...
+Description: Instrument-Neutral Device Interface library -- shared library
+ INDI (Instrument-Neutral Device Interface) is a distributed XML-based
+ control protocol designed to operate astronomical instrumentation.
+ INDI is small, flexible, easy to parse, scalable, and stateless.
+ It supports common DCS functions such as remote control, data acquisition,
+ monitoring, and a lot more.
  .
  This package contains the shared library.
 
@@ -32,27 +36,40 @@ Section: libdevel
 Architecture: any
 Depends: libindi0 (= ${binary:Version}), ${misc:Depends},
  libboost-dev, libusb-dev
-Description: ... -- development files
- ...
+Description: Instrument-Neutral Device Interface library -- development files
+ INDI (Instrument-Neutral Device Interface) is a distributed XML-based
+ control protocol designed to operate astronomical instrumentation.
+ INDI is small, flexible, easy to parse, scalable, and stateless.
+ It supports common DCS functions such as remote control, data acquisition,
+ monitoring, and a lot more.
  .
- This package contains development headers for the INDI library.
+ This package contains development headers and libraries for the INDI library.
 
 Package: libindi-data
 Architecture: all
 Depends: ${misc:Depends}
 Multi-Arch: foreign
-Description: ... -- shared data
- ...
+Description: Instrument-Neutral Device Interface library -- shared data
+ INDI (Instrument-Neutral Device Interface) is a distributed XML-based
+ control protocol designed to operate astronomical instrumentation.
+ INDI is small, flexible, easy to parse, scalable, and stateless.
+ It supports common DCS functions such as remote control, data acquisition,
+ monitoring, and a lot more.
  .
- This package contains the data for the INDI library.
+ This package contains the data files for the INDI library.
 
 Package: indi
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: ... -- ...
- ...
+Description: INDI server, drivers and tools
+ INDI (Instrument-Neutral Device Interface) is a distributed XML-based
+ control protocol designed to operate astronomical instrumentation.
+ INDI is small, flexible, easy to parse, scalable, and stateless.
+ It supports common DCS functions such as remote control, data acquisition,
+ monitoring, and a lot more.
  .
- ...
+ This package contains the INDI server, the drivers for the supported
+ astronomical instrumentation, and other INDI tools.
 
 Package: indi-dbg
 Priority: extra
@@ -60,9 +77,13 @@ Section: debug
 Architecture: any
 Depends: libindi0 (= ${binary:Version}), ${misc:Depends}
 Pre-Depends: ${misc:Pre-Depends}
-Description: ... -- debug symbols
- ...
+Description: Instrument-Neutral Device Interface library -- debug symbols
+ INDI (Instrument-Neutral Device Interface) is a distributed XML-based
+ control protocol designed to operate astronomical instrumentation.
+ INDI is small, flexible, easy to parse, scalable, and stateless.
+ It supports common DCS functions such as remote control, data acquisition,
+ monitoring, and a lot more.
  .
- This package contains the debug symbols, useful to investigate problems in
- INDI.
+ This package contains the debug symbols for the INDI library and all the
+ utilities, useful to investigate problems in INDI.
 
