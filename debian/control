@@ -17,7 +17,8 @@ Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/krap/libindi.git
 
 Package: libindi0
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends},
+ libindi-data (>= ${source:Version})
 Suggests: indi
 Description: ... -- shared library
  ...
@@ -32,6 +33,14 @@ Description: ... -- development files
  ...
  .
  This package contains development headers for the INDI library.
+
+Package: libindi-data
+Architecture: all
+Depends: ${misc:Depends}
+Description: ... -- shared data
+ ...
+ .
+ This package contains the data for the INDI library.
 
 Package: indi
 Architecture: any
