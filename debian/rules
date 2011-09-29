@@ -1,5 +1,9 @@
 #!/usr/bin/make -f
 
+export CFLAGS := $(shell dpkg-buildflags --get CFLAGS)
+export CXXFLAGS := $(shell dpkg-buildflags --get CXXFLAGS)
+export LDFLAGS := $(shell dpkg-buildflags --get LDFLAGS)
+
 %:
 	dh $@
 
