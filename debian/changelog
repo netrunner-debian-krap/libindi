@@ -3,5 +3,6 @@ libindi (0.8-0r1) UNRELEASED; urgency=low
   * Initial release.
   * Add patches:
     - format-security.diff: fix string literals for snprintf() invocations
+    - libdir.diff: respect the LIB_DESTINATION cmake variable
 
  -- Pino Toscano <pino@debian.org>  Thu, 29 Sep 2011 10:53:33 +0200
