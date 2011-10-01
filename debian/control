@@ -1,5 +1,5 @@
 Source: libindi
-Section: libs
+Section: misc
 Priority: optional
 Maintainer: Debian Krap Maintainers <debian-qt-kde@lists.debian.org>
 Uploaders: Pino Toscano <pino@debian.org>
@@ -16,6 +16,7 @@ Vcs-Git: git://anonscm.debian.org/pkg-kde/krap/libindi.git
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/krap/libindi.git
 
 Package: libindi0
+Section: libs
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends},
  libindi-data (>= ${source:Version})
