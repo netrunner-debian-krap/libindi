@@ -1,0 +1,26 @@
+Author: Pino Toscano <pino@debian.org>
+Description: fix the pkgconfig file
+ - add a missing 'I' for one of the -I include dirs
+ - use the ${includedir} and ${libdir} variables
+ - fix the URL field
+Last-Update: 2011-10-01
+Forwarded: no
+
+---
+ libindi.pc.cmake |    6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+--- a/libindi.pc.cmake
++++ b/libindi.pc.cmake
+@@ -5,8 +5,8 @@ includedir=@INCLUDE_INSTALL_DIR@
+ 
+ Name: libindi
+ Description: Instrument Neutral Distributed Interface
+-URL=http://www.indilib.org/
++URL: http://www.indilib.org/
+ Version: @CMAKE_INDI_VERSION_STRING@
+-Libs: -L@LIB_DESTINATION@ -lindi
+-Cflags: -I@INCLUDE_INSTALL_DIR@ -@INCLUDE_INSTALL_DIR@/libindi
++Libs: -L${libdir} -lindi
++Cflags: -I${includedir} -I${includedir}/libindi
+ 

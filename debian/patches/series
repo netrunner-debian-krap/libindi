@@ -1,3 +1,4 @@
 format-security.diff
 libdir.diff
 destdir.diff
+fix-pkgconfig.diff
