@@ -1,4 +1,4 @@
-libindi (0.8-0r1) UNRELEASED; urgency=low
+libindi (0.8-1) unstable; urgency=low
 
   * Initial release.
   * Add patches:
@@ -7,4 +7,4 @@ libindi (0.8-0r1) UNRELEASED; urgency=low
     - destdir.diff: respect the DESTDIR envvar
     - fix-pkgconfig.diff: fix some issues in the .pc pkg-config file
 
- -- Pino Toscano <pino@debian.org>  Thu, 29 Sep 2011 10:53:33 +0200
+ -- Pino Toscano <pino@debian.org>  Sat, 01 Oct 2011 19:40:46 +0200
