@@ -11,7 +11,7 @@ Forwarded: no
 
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
-@@ -19,7 +19,7 @@ set (LIB_SUFFIX "" CACHE STRING "Define
+@@ -20,7 +20,7 @@ set (LIB_SUFFIX "" CACHE STRING "Define
  set (LIB_DESTINATION "${CMAKE_INSTALL_PREFIX}/lib${LIB_SUFFIX}" CACHE STRING "Library directory name")
  ## the following are directories where stuff will be installed to
  set(INCLUDE_INSTALL_DIR      "${CMAKE_INSTALL_PREFIX}/include/" CACHE PATH "The subdirectory to the header prefix")
