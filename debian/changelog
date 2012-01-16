@@ -1,6 +1,8 @@
 libindi (0.9-0r1) UNRELEASED; urgency=low
 
-  * New upstream release.
+  * New upstream release:
+    - provides the fix by Nobuhiro Iwamatsu (thanks!) for compiling on SuperH.
+      (Closes: #644456)
   * Update the patches:
     - destdir.diff: drop, applied upstream
     - fix-pkgconfig.diff: drop, applied upstream
