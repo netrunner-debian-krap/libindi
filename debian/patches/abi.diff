@@ -1,0 +1,33 @@
+Author: Pino Toscano <pino@debian.org>
+Description: Bump the library version ABI
+ libindi's API is not final until 1.0 but upstream does not bump SONAME,
+ so manually bump the SONAME and library VERSION ourselves.
+Origin: vendor
+Last-Update: 2012-01-16
+Forwarded: not-needed
+
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -2,11 +2,12 @@ cmake_minimum_required(VERSION 2.4.7)
+ PROJECT(libindi C CXX)
+ 
+ ##################  INDI version  ################################
+-set(INDI_SOVERSION "0")
++set(INDI_SOVERSION "0a")
+ set(CMAKE_INDI_VERSION_MAJOR 0)
+ set(CMAKE_INDI_VERSION_MINOR 9)
+ set(CMAKE_INDI_VERSION_RELEASE 0)
+ set(CMAKE_INDI_VERSION_STRING "${CMAKE_INDI_VERSION_MAJOR}.${CMAKE_INDI_VERSION_MINOR}.${CMAKE_INDI_VERSION_RELEASE}")
++set(CMAKE_INDI_LIBVERSION_STRING "${INDI_SOVERSION}.${CMAKE_INDI_VERSION_MINOR}.${CMAKE_INDI_VERSION_RELEASE}")
+ 
+ ##################  Paths  ################################
+ set(CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake_modules/")
+@@ -138,7 +139,7 @@ target_link_libraries(indi ${CFITSIO_LIB
+ endif(CFITSIO_FOUND)
+ 
+ install(TARGETS indi LIBRARY DESTINATION ${LIB_DESTINATION})
+-set_target_properties(indi PROPERTIES VERSION ${CMAKE_INDI_VERSION_STRING} SOVERSION ${INDI_SOVERSION})
++set_target_properties(indi PROPERTIES VERSION ${CMAKE_INDI_LIBVERSION_STRING} SOVERSION ${INDI_SOVERSION})
+ 
+ ##################################################
+ ############ INDI Main Static Library ############

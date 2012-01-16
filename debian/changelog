@@ -13,6 +13,10 @@ libindi (0.9-0r1) UNRELEASED; urgency=low
   * libindi-dev: add dependency on libcfitsio3-dev, as cfitsio headers are
     included in public headers.
   * Update copyright.
+  * Upstream does not keep a stable ABI while not bumping the SONAME, so:
+    - bump the SONAME to 0a (patch abi.diff)
+    - rename libindi0 to libindi0a
+    - drop the symbols file of libindi, "replaced" by a tight shlibs
 
  -- Pino Toscano <pino@debian.org>  Mon, 16 Jan 2012 11:48:20 +0100
 
