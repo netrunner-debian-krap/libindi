@@ -14,7 +14,7 @@ Homepage: http://www.indilib.org/
 Vcs-Git: git://anonscm.debian.org/pkg-kde/krap/libindi.git
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/krap/libindi.git
 
-Package: libindi0a
+Package: libindi0b
 Section: libs
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends},
@@ -34,7 +34,7 @@ Description: Instrument-Neutral Device Interface library -- shared library
 Package: libindi-dev
 Section: libdevel
 Architecture: any
-Depends: libindi0a (= ${binary:Version}), ${misc:Depends},
+Depends: libindi0b (= ${binary:Version}), ${misc:Depends},
  libusb-dev, libcfitsio3-dev
 Description: Instrument-Neutral Device Interface library -- development files
  INDI (Instrument-Neutral Device Interface) is a distributed XML-based
@@ -76,7 +76,7 @@ Package: indi-dbg
 Priority: extra
 Section: debug
 Architecture: any
-Depends: libindi0a (= ${binary:Version}), ${misc:Depends}
+Depends: libindi0b (= ${binary:Version}), ${misc:Depends}
 Suggests: indi-bin (= ${binary:Version})
 Pre-Depends: ${misc:Pre-Depends}
 Description: Instrument-Neutral Device Interface library -- debug symbols

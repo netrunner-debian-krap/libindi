@@ -3,7 +3,7 @@ Description: Bump the library version ABI
  libindi's API is not final until 1.0 but upstream does not bump SONAME,
  so manually bump the SONAME and library VERSION ourselves.
 Origin: vendor
-Last-Update: 2012-01-16
+Last-Update: 2012-03-23
 Forwarded: not-needed
 
 --- a/CMakeLists.txt
@@ -13,7 +13,7 @@ Forwarded: not-needed
  
  ##################  INDI version  ################################
 -set(INDI_SOVERSION "0")
-+set(INDI_SOVERSION "0a")
++set(INDI_SOVERSION "0b")
  set(CMAKE_INDI_VERSION_MAJOR 0)
  set(CMAKE_INDI_VERSION_MINOR 9)
  set(CMAKE_INDI_VERSION_RELEASE 0)
