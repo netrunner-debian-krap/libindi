@@ -1,5 +1,8 @@
 libindi (0.9.1-2) UNRELEASED; urgency=low
 
+  [ Pino Toscano ]
+  * Bump the libnova-dev build dependency to >= 0.14.0. (Not really needed,
+    but makes sure it is built with an up-to-date libnova.)
 
  -- Debian Krap Maintainers <debian-qt-kde@lists.debian.org>  Sun, 25 Mar 2012 15:03:14 +0200
 
