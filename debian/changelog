@@ -15,6 +15,7 @@ libindi (0.9.6-1) UNRELEASED; urgency=low
   * Bump Standards-Version, no changes needed.
   * Update install files.
   * Bump compat to 9.
+  * Make -dbg package m-a: same.
 
  -- Maximiliano Curia <maxy@debian.org>  Wed, 06 Nov 2013 17:00:53 +0100
 
