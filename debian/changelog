@@ -8,6 +8,7 @@ libindi (0.9.6-1) UNRELEASED; urgency=low
     http://www.forallsecure.com/bug-
     reports/3ef71f68767fec365de8eb61f91a4ca0be01b5fc/
   * Refresh patches.
+  * Add libindimain0 and libindidriver0 packages.
 
  -- Maximiliano Curia <maxy@debian.org>  Wed, 06 Nov 2013 17:00:53 +0100
 
