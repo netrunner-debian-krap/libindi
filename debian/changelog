@@ -7,6 +7,7 @@ libindi (0.9.6-1) UNRELEASED; urgency=low
   * New patch: getINDIproperty_mayhem_fix.diff fix for
     http://www.forallsecure.com/bug-
     reports/3ef71f68767fec365de8eb61f91a4ca0be01b5fc/
+  * Refresh patches.
 
  -- Maximiliano Curia <maxy@debian.org>  Wed, 06 Nov 2013 17:00:53 +0100
 

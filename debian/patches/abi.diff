@@ -6,28 +6,30 @@ Origin: vendor
 Last-Update: 2012-03-23
 Forwarded: not-needed
 
---- a/CMakeLists.txt
-+++ b/CMakeLists.txt
-@@ -2,11 +2,12 @@ cmake_minimum_required(VERSION 2.4.7)
- PROJECT(libindi C CXX)
+Index: libindi/CMakeLists.txt
+===================================================================
+--- libindi.orig/CMakeLists.txt	2013-11-06 18:43:55.472802336 +0100
++++ libindi/CMakeLists.txt	2013-11-06 18:48:55.160547857 +0100
+@@ -3,10 +3,12 @@
  
  ##################  INDI version  ################################
--set(INDI_SOVERSION "0")
-+set(INDI_SOVERSION "0b")
+ set(INDI_SOVERSION "0")
++set(CLIENT_INDI_SOVERSION "0b")
  set(CMAKE_INDI_VERSION_MAJOR 0)
  set(CMAKE_INDI_VERSION_MINOR 9)
- set(CMAKE_INDI_VERSION_RELEASE 0)
+ set(CMAKE_INDI_VERSION_RELEASE 6)
  set(CMAKE_INDI_VERSION_STRING "${CMAKE_INDI_VERSION_MAJOR}.${CMAKE_INDI_VERSION_MINOR}.${CMAKE_INDI_VERSION_RELEASE}")
-+set(CMAKE_INDI_LIBVERSION_STRING "${INDI_SOVERSION}.${CMAKE_INDI_VERSION_MINOR}.${CMAKE_INDI_VERSION_RELEASE}")
++set(CMAKE_INDI_CLIENT_VERSION_STRING "${CLIENT_INDI_SOVERSION}.${CMAKE_INDI_VERSION_MINOR}.${CMAKE_INDI_VERSION_RELEASE}")
  
  ##################  Paths  ################################
  set(CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake_modules/")
-@@ -138,7 +139,7 @@ target_link_libraries(indi ${CFITSIO_LIB
+@@ -147,7 +149,8 @@
  endif(CFITSIO_FOUND)
  
  install(TARGETS indi LIBRARY DESTINATION ${LIB_DESTINATION})
 -set_target_properties(indi PROPERTIES VERSION ${CMAKE_INDI_VERSION_STRING} SOVERSION ${INDI_SOVERSION})
-+set_target_properties(indi PROPERTIES VERSION ${CMAKE_INDI_LIBVERSION_STRING} SOVERSION ${INDI_SOVERSION})
++set_target_properties(indi PROPERTIES VERSION ${CMAKE_INDI_CLIENT_VERSION_STRING}
++    SOVERSION ${CLIENT_INDI_SOVERSION})
  
- ##################################################
- ############ INDI Main Static Library ############
+ ###################################################
+ ############ INDI Main Shared Library #############
