@@ -1,0 +1,17 @@
+Index: libindi-0.9.1/tools/getINDIproperty.c
+===================================================================
+--- libindi-0.9.1.orig/tools/getINDIproperty.c	2013-07-01 16:55:16.669691659 +0200
++++ libindi-0.9.1/tools/getINDIproperty.c	2013-07-01 16:56:01.787933173 +0200
+@@ -189,11 +189,11 @@
+ 	if (directfd >= 0) {
+ 	    svrwfp = fdopen (directfd, "w");
+ 	    svrrfp = fdopen (directfd, "r");
+-	    setbuf (svrrfp, NULL);	/* don't absorb next guy's stuff */
+ 	    if (!svrwfp || !svrrfp) {
+ 		fprintf (stderr, "Direct fd %d: %s\n",directfd,strerror(errno));
+ 		exit(1);
+ 	    }
++	    setbuf (svrrfp, NULL);	/* don't absorb next guy's stuff */
+ 	    if (verbose)
+ 		fprintf (stderr, "Using direct fd %d\n", directfd);
+ 	} else {
