@@ -1,4 +1,4 @@
-libindi (0.9.7-1) UNRELEASED; urgency=low
+libindi (0.9.7-1) unstable; urgency=low
 
   * New upstream release.
   * New patch: setINDIproperty_mayhem_fix.diff fix for
@@ -20,7 +20,7 @@ libindi (0.9.7-1) UNRELEASED; urgency=low
   * Update symbols files.
   * Bump so name of libindidriver to 0b.
 
- -- Maximiliano Curia <maxy@debian.org>  Wed, 20 Nov 2013 10:46:24 +0100
+ -- Maximiliano Curia <maxy@debian.org>  Wed, 20 Nov 2013 13:56:05 +0100
 
 libindi (0.9.1-2) unstable; urgency=low
 
