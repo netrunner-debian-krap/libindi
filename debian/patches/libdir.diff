@@ -11,9 +11,9 @@ Forwarded: no
 
 Index: libindi/CMakeLists.txt
 ===================================================================
---- libindi.orig/CMakeLists.txt	2013-11-20 10:50:58.298182371 +0100
-+++ libindi/CMakeLists.txt	2013-11-20 10:53:46.283509127 +0100
-@@ -26,7 +26,7 @@
+--- libindi.orig/CMakeLists.txt	2013-11-20 12:47:59.317757554 +0100
++++ libindi/CMakeLists.txt	2013-11-20 12:47:59.313757721 +0100
+@@ -29,7 +29,7 @@
  set (LIB_DESTINATION "${CMAKE_INSTALL_PREFIX}/lib${LIB_SUFFIX}" CACHE STRING "Library directory name")
  ## the following are directories where stuff will be installed to
  set(INCLUDE_INSTALL_DIR      "${CMAKE_INSTALL_PREFIX}/include/" CACHE PATH "The subdirectory to the header prefix")

@@ -8,23 +8,26 @@ Forwarded: not-needed
 
 Index: libindi/CMakeLists.txt
 ===================================================================
---- libindi.orig/CMakeLists.txt	2013-11-20 10:48:13.448731059 +0100
-+++ libindi/CMakeLists.txt	2013-11-20 10:50:12.216012999 +0100
-@@ -3,10 +3,13 @@
+--- libindi.orig/CMakeLists.txt	2013-11-20 12:45:10.520532610 +0100
++++ libindi/CMakeLists.txt	2013-11-20 12:47:45.466313430 +0100
+@@ -3,10 +3,16 @@
  
  ##################  INDI version  ################################
  set(INDI_SOVERSION "0")
 +set(CLIENT_INDI_SOVERSION "0b")
++set(DRIVER_INDI_SOVERSION "0b")
  set(CMAKE_INDI_VERSION_MAJOR 0)
  set(CMAKE_INDI_VERSION_MINOR 9)
  set(CMAKE_INDI_VERSION_RELEASE 7)
  set(CMAKE_INDI_VERSION_STRING "${CMAKE_INDI_VERSION_MAJOR}.${CMAKE_INDI_VERSION_MINOR}.${CMAKE_INDI_VERSION_RELEASE}")
 +set(CMAKE_INDI_CLIENT_VERSION_STRING
 +    "${CLIENT_INDI_SOVERSION}.${CMAKE_INDI_VERSION_MINOR}.${CMAKE_INDI_VERSION_RELEASE}")
++set(CMAKE_INDI_DRIVER_VERSION_STRING
++    "${DRIVER_INDI_SOVERSION}.${CMAKE_INDI_VERSION_MINOR}.${CMAKE_INDI_VERSION_RELEASE}")
  
  ##################  Paths  ################################
  set(CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake_modules/")
-@@ -136,7 +139,8 @@
+@@ -136,7 +142,8 @@
  endif(CFITSIO_FOUND)
  
  install(TARGETS indi LIBRARY DESTINATION ${LIB_DESTINATION})
@@ -34,3 +37,14 @@ Index: libindi/CMakeLists.txt
  
  ###################################################
  ############ INDI Main Shared Library #############
+@@ -163,7 +170,9 @@
+ target_link_libraries(indidriver ${CFITSIO_LIBRARIES})
+ endif(CFITSIO_FOUND)
+ install(TARGETS indidriver LIBRARY DESTINATION ${LIB_DESTINATION})
+-set_target_properties(indidriver PROPERTIES VERSION ${CMAKE_INDI_VERSION_STRING} SOVERSION ${INDI_SOVERSION})
++set_target_properties(indidriver PROPERTIES
++    VERSION ${CMAKE_INDI_DRIVER_VERSION_STRING}
++    SOVERSION ${DRIVER_INDI_SOVERSION})
+ 
+ #install(TARGETS indidriver ARCHIVE DESTINATION ${LIB_DESTINATION})
+ 
