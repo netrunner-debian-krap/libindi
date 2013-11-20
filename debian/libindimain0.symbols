@@ -1,3 +1,4 @@
+# SymbolsHelper-Confirmed: 0.9.7 amd64
 libindimain.so.0 libindimain0 #MINVER#
  IDDefBLOB@Base 0.9.6
  IDDefLight@Base 0.9.6
@@ -33,6 +34,7 @@ libindimain.so.0 libindimain0 #MINVER#
  IUFillText@Base 0.9.6
  IUFillTextVector@Base 0.9.6
  IUFindBLOB@Base 0.9.6
+ IUFindIndex@Base 0.9.7
  IUFindLight@Base 0.9.6
  IUFindNumber@Base 0.9.6
  IUFindOnSwitch@Base 0.9.6

@@ -17,6 +17,8 @@ libindi (0.9.7-1) UNRELEASED; urgency=low
   * Bump compat to 9.
   * Make -dbg package m-a: same.
   * Add new packages to -dev package.
+  * Update symbols files.
+  * Bump so name of libindidriver to 0b.
 
  -- Maximiliano Curia <maxy@debian.org>  Wed, 20 Nov 2013 10:46:24 +0100
 
