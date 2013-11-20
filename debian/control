@@ -67,7 +67,8 @@ Description: Instrument-Neutral Device Interface library -- main library
 Package: libindi-dev
 Section: libdevel
 Architecture: any
-Depends: libindi0b (= ${binary:Version}), ${misc:Depends},
+Depends: ${misc:Depends}, libindi0b (= ${binary:Version}),
+ libindidriver0 (= ${binary:Version}), libindimain0 (= ${binary:Version}),
  libusb-dev, libcfitsio3-dev
 Description: Instrument-Neutral Device Interface library -- development files
  INDI (Instrument-Neutral Device Interface) is a distributed XML-based
