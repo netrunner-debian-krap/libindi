@@ -10,6 +10,7 @@ libindi (0.9.8.1-1) UNRELEASED; urgency=medium
   * Bump libindidriver soversion.
   * Update symbols.
   * New lib package libindialignmentdriver0.
+  * Install binary plugins in an arch-dependant dir.
 
  -- Maximiliano Curia <maxy@debian.org>  Tue, 01 Apr 2014 11:27:40 +0200
 
