@@ -2,6 +2,10 @@ libindi (0.9.8.1-1) UNRELEASED; urgency=medium
 
   * Update watch file.
   * New upstream release.
+  * Remove patch: libdir.diff, applied by upstream.
+  * Remove patch: setINDIproperty_mayhem_fix.diff, applied by upstream.
+  * Remove patch: getINDIproperty_mayhem_fix.diff, applied by upstream.
+  * Refresh patches.
 
  -- Maximiliano Curia <maxy@debian.org>  Tue, 01 Apr 2014 11:27:40 +0200
 

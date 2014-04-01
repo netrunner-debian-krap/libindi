@@ -8,9 +8,9 @@ Forwarded: not-needed
 
 Index: libindi/CMakeLists.txt
 ===================================================================
---- libindi.orig/CMakeLists.txt	2013-11-20 12:45:10.520532610 +0100
-+++ libindi/CMakeLists.txt	2013-11-20 12:47:45.466313430 +0100
-@@ -3,10 +3,16 @@
+--- libindi.orig/CMakeLists.txt	2014-04-01 15:42:57.788088964 +0200
++++ libindi/CMakeLists.txt	2014-04-01 15:52:19.949524550 +0200
+@@ -5,10 +5,16 @@
  
  ##################  INDI version  ################################
  set(INDI_SOVERSION "0")
@@ -18,7 +18,7 @@ Index: libindi/CMakeLists.txt
 +set(DRIVER_INDI_SOVERSION "0b")
  set(CMAKE_INDI_VERSION_MAJOR 0)
  set(CMAKE_INDI_VERSION_MINOR 9)
- set(CMAKE_INDI_VERSION_RELEASE 7)
+ set(CMAKE_INDI_VERSION_RELEASE 8)
  set(CMAKE_INDI_VERSION_STRING "${CMAKE_INDI_VERSION_MAJOR}.${CMAKE_INDI_VERSION_MINOR}.${CMAKE_INDI_VERSION_RELEASE}")
 +set(CMAKE_INDI_CLIENT_VERSION_STRING
 +    "${CLIENT_INDI_SOVERSION}.${CMAKE_INDI_VERSION_MINOR}.${CMAKE_INDI_VERSION_RELEASE}")
@@ -27,8 +27,8 @@ Index: libindi/CMakeLists.txt
  
  ##################  Paths  ################################
  set(CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake_modules/")
-@@ -136,7 +142,8 @@
- endif(CFITSIO_FOUND)
+@@ -147,7 +153,8 @@
+ target_link_libraries(indi ${NOVA_LIBRARIES} ${M_LIB} ${ZLIB_LIBRARY} ${CFITSIO_LIBRARIES})
  
  install(TARGETS indi LIBRARY DESTINATION ${LIB_DESTINATION})
 -set_target_properties(indi PROPERTIES VERSION ${CMAKE_INDI_VERSION_STRING} SOVERSION ${INDI_SOVERSION})
@@ -37,14 +37,14 @@ Index: libindi/CMakeLists.txt
  
  ###################################################
  ############ INDI Main Shared Library #############
-@@ -163,7 +170,9 @@
- target_link_libraries(indidriver ${CFITSIO_LIBRARIES})
- endif(CFITSIO_FOUND)
- install(TARGETS indidriver LIBRARY DESTINATION ${LIB_DESTINATION})
--set_target_properties(indidriver PROPERTIES VERSION ${CMAKE_INDI_VERSION_STRING} SOVERSION ${INDI_SOVERSION})
-+set_target_properties(indidriver PROPERTIES
+@@ -175,7 +182,9 @@
+ add_library(indidriverstatic STATIC ${libindicom_SRCS} ${liblilxml_SRCS} ${indimain_SRCS} ${indidriver_SRCS})
+ target_link_libraries(indidriverstatic ${LIBUSB_1_LIBRARIES} ${NOVA_LIBRARIES} ${CMAKE_THREAD_LIBS_INIT} ${CFITSIO_LIBRARIES} ${M_LIB} ${ZLIB_LIBRARY})
+ endif (${CMAKE_SYSTEM_NAME} MATCHES "Linux")
+-set_target_properties(indidriver indidriverstatic PROPERTIES VERSION ${CMAKE_INDI_VERSION_STRING} SOVERSION ${INDI_SOVERSION} OUTPUT_NAME indidriver)
++set_target_properties(indidriver indidriverstatic PROPERTIES
 +    VERSION ${CMAKE_INDI_DRIVER_VERSION_STRING}
-+    SOVERSION ${DRIVER_INDI_SOVERSION})
- 
- #install(TARGETS indidriver ARCHIVE DESTINATION ${LIB_DESTINATION})
++    SOVERSION ${DRIVER_INDI_SOVERSION} OUTPUT_NAME indidriver)
+ install(TARGETS indidriver LIBRARY DESTINATION ${LIB_DESTINATION})
+ install(TARGETS indidriverstatic ARCHIVE DESTINATION ${LIB_DESTINATION})
  
