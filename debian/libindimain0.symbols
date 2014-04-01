@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 0.9.7 amd64
+# SymbolsHelper-Confirmed: 0.9.8.1 amd64
 libindimain.so.0 libindimain0 #MINVER#
  IDDefBLOB@Base 0.9.6
  IDDefLight@Base 0.9.6
@@ -84,6 +84,7 @@ libindimain.so.0 libindimain0 #MINVER#
  editXMLAtt@Base 0.9.6
  editXMLEle@Base 0.9.6
  entityXML@Base 0.9.6
+ escapeXML@Base 0.9.8.1
  eventLoop@Base 0.9.6
  extractISOTime@Base 0.9.6
  f_scansexa@Base 0.9.6
