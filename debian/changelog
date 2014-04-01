@@ -1,4 +1,4 @@
-libindi (0.9.8.1-1) UNRELEASED; urgency=medium
+libindi (0.9.8.1-1) experimental; urgency=medium
 
   * Update watch file.
   * New upstream release.
@@ -12,7 +12,7 @@ libindi (0.9.8.1-1) UNRELEASED; urgency=medium
   * New lib package libindialignmentdriver0.
   * Install binary plugins in an arch-dependant dir.
 
- -- Maximiliano Curia <maxy@debian.org>  Tue, 01 Apr 2014 11:27:40 +0200
+ -- Maximiliano Curia <maxy@debian.org>  Tue, 01 Apr 2014 17:57:49 +0200
 
 libindi (0.9.7-1) unstable; urgency=low
 
