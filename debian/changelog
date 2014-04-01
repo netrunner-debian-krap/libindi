@@ -6,6 +6,7 @@ libindi (0.9.8.1-1) UNRELEASED; urgency=medium
   * Remove patch: setINDIproperty_mayhem_fix.diff, applied by upstream.
   * Remove patch: getINDIproperty_mayhem_fix.diff, applied by upstream.
   * Refresh patches.
+  * Update build dependencies.
 
  -- Maximiliano Curia <maxy@debian.org>  Tue, 01 Apr 2014 11:27:40 +0200
 
