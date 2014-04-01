@@ -33,7 +33,7 @@ Description: Instrument-Neutral Device Interface library -- client library
  .
  This package contains the client shared library.
 
-Package: libindidriver0b
+Package: libindidriver0c
 Section: libs
 Architecture: any
 Depends: libindi-data (>= ${source:Version}), ${misc:Depends}, ${shlibs:Depends}
@@ -68,7 +68,7 @@ Section: libdevel
 Architecture: any
 Depends: libcfitsio3-dev,
          libindi0b (= ${binary:Version}),
-         libindidriver0b (= ${binary:Version}),
+         libindidriver0c (= ${binary:Version}),
          libindimain0 (= ${binary:Version}),
          libusb-dev,
          ${misc:Depends}

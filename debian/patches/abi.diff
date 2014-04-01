@@ -15,7 +15,7 @@ Index: libindi/CMakeLists.txt
  ##################  INDI version  ################################
  set(INDI_SOVERSION "0")
 +set(CLIENT_INDI_SOVERSION "0b")
-+set(DRIVER_INDI_SOVERSION "0b")
++set(DRIVER_INDI_SOVERSION "0c")
  set(CMAKE_INDI_VERSION_MAJOR 0)
  set(CMAKE_INDI_VERSION_MINOR 9)
  set(CMAKE_INDI_VERSION_RELEASE 8)

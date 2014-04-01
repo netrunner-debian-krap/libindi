@@ -1,5 +1,5 @@
 # SymbolsHelper-Confirmed: 0.9.7 amd64
-libindidriver.so.0b libindidriver0b #MINVER#
+libindidriver.so.0c libindidriver0c #MINVER#
  COMMUNICATION_TAB@Base 0.9.7
  DATETIME_TAB@Base 0.9.7
  FILTER_TAB@Base 0.9.7
