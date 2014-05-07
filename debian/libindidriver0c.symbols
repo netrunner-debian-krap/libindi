@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 0.9.8.1 amd64
+# SymbolsHelper-Confirmed: 0.9.8.1 amd64 armel armhf i386 mipsel powerpc
 libindidriver.so.0c libindidriver0c #MINVER#
  ALIGNMENT_TAB@Base 0.9.8.1
  COMMUNICATION_TAB@Base 0.9.7
@@ -216,7 +216,7 @@ libindidriver.so.0c libindidriver0c #MINVER#
  _ZN4INDI16FocuserInterfaceD2Ev@Base 0.9.8.1
  _ZN4INDI3CCD10GuideNorthEf@Base 0.9.7
  _ZN4INDI3CCD10GuideSouthEf@Base 0.9.7
- _ZN4INDI3CCD10uploadFileEP7CCDChipPKvm@Base 0.9.8.1
+ (subst)_ZN4INDI3CCD10uploadFileEP7CCDChipPKv{size_t}@Base 0.9.8.1
  _ZN4INDI3CCD11ISNewNumberEPKcS2_PdPPci@Base 0.9.7
  _ZN4INDI3CCD11ISNewSwitchEPKcS2_P7ISStatePPci@Base 0.9.7
  _ZN4INDI3CCD12SetCCDParamsEiiiff@Base 0.9.7
