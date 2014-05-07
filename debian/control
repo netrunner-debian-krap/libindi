@@ -11,6 +11,7 @@ Build-Depends: cmake (>= 2.4.7),
                libnova-dev (>= 0.14.0),
                libusb-1.0-0-dev,
                libusb-dev,
+               pkg-kde-tools (>= 0.12),
                zlib1g-dev
 Standards-Version: 3.9.5
 Homepage: http://www.indilib.org/
