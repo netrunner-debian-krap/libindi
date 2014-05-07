@@ -1,7 +1,8 @@
-libindi (0.9.8.1-2) UNRELEASED; urgency=medium
+libindi (0.9.8.1-2) unstable; urgency=medium
 
   * Update symbols from 0.9.8.1-1 buildlogs.
   * Add dh sequence pkgkde_symbolshelper.
+  * Release to unstable.
 
  -- Maximiliano Curia <maxy@debian.org>  Wed, 07 May 2014 14:16:04 +0200
 
