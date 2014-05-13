@@ -67,7 +67,7 @@ Description: Instrument-Neutral Device Interface library -- main library
 Package: libindialignmentdriver0
 Section: libs
 Architecture: any
-Depends: ${misc:Depends}, ${shlibs:Depends}
+Depends: libindi-plugins (= ${binary:Version}), ${misc:Depends}, ${shlibs:Depends}
 Pre-Depends: ${misc:Pre-Depends}
 Multi-Arch: same
 Description: Instrument-Neutral Device Interface library -- alignment driver lib
@@ -115,7 +115,7 @@ Description: Instrument-Neutral Device Interface library -- development files
 
 Package: libindi-data
 Architecture: all
-Depends: ${misc:Depends}, libindi-plugins (>= ${source:Version})
+Depends: ${misc:Depends}
 Multi-Arch: foreign
 Description: Instrument-Neutral Device Interface library -- shared data
  INDI (Instrument-Neutral Device Interface) is a distributed XML-based
