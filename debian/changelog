@@ -2,6 +2,7 @@ libindi (0.9.8.1-3) UNRELEASED; urgency=medium
 
   * Improve dependencies, libindialignmentdriver0 is the only library that
     does a dlopen of the plugins. (Closes: #747855)
+  * Update symbols files. (Closes: #749962)
 
  -- Maximiliano Curia <maxy@debian.org>  Tue, 13 May 2014 15:19:54 +0200
 
