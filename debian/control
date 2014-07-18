@@ -10,7 +10,6 @@ Build-Depends: cmake (>= 2.4.7),
                libjpeg8-dev,
                libnova-dev (>= 0.14.0),
                libusb-1.0-0-dev,
-               libusb-dev,
                pkg-kde-tools (>= 0.12),
                zlib1g-dev
 Standards-Version: 3.9.5
@@ -102,7 +101,7 @@ Depends: libcfitsio3-dev,
          libindidriver0c (= ${binary:Version}),
          libindimain0 (= ${binary:Version}),
          libindialignmentdriver0 (= ${binary:Version}),
-         libusb-dev,
+         libusb-1.0-0-dev,
          ${misc:Depends}
 Description: Instrument-Neutral Device Interface library -- development files
  INDI (Instrument-Neutral Device Interface) is a distributed XML-based
