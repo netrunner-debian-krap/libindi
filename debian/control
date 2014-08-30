@@ -9,7 +9,7 @@ Build-Depends: cmake (>= 2.4.7),
                libgsl0-dev,
                libjpeg8-dev,
                libnova-dev (>= 0.14.0),
-               libusb-1.0-0-dev | libusb2-dev [kfreebsd-any],
+               libusb-1.0-0-dev,
                pkg-config,
                pkg-kde-tools (>= 0.12),
                zlib1g-dev
