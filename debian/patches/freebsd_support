@@ -1,88 +1,44 @@
 Index: libindi/cmake_modules/FindUSB-1.cmake
 ===================================================================
 --- libindi.orig/cmake_modules/FindUSB-1.cmake	2014-08-30 03:56:46.016848990 +0200
-+++ libindi/cmake_modules/FindUSB-1.cmake	2014-08-30 04:13:30.331844482 +0200
-@@ -46,38 +46,47 @@
++++ libindi/cmake_modules/FindUSB-1.cmake	2014-08-30 04:26:46.311326552 +0200
+@@ -46,16 +46,16 @@
    # in cache already
    set(LIBUSB_FOUND TRUE)
  else (LIBUSB_1_LIBRARIES AND LIBUSB_1_INCLUDE_DIRS)
--  find_path(LIBUSB_1_INCLUDE_DIR
--    NAMES
++
+   find_path(LIBUSB_1_INCLUDE_DIR
+     NAMES
 -	libusb.h
--    PATHS
--      /usr/include
--      /usr/local/include
--      /opt/local/include
--      /sw/include
++        libusb.h
+     PATHS
+       /usr/include
++      /usr/include/libusb-1.0
+       /usr/local/include
+       /opt/local/include
+       /sw/include
 -	PATH_SUFFIXES
 -	  libusb-1.0
--  )
--
--  find_library(LIBUSB_1_LIBRARY
--    NAMES
--      usb-1.0
--    PATHS
--      /usr/lib
--      /usr/local/lib
--      /opt/local/lib
--      /sw/lib
--  )
--
--  set(LIBUSB_1_INCLUDE_DIRS
--    ${LIBUSB_1_INCLUDE_DIR}
--  )
--  set(LIBUSB_1_LIBRARIES
--    ${LIBUSB_1_LIBRARY}
+   )
+ 
+   find_library(LIBUSB_1_LIBRARY
+@@ -73,10 +73,14 @@
+   )
+   set(LIBUSB_1_LIBRARIES
+     ${LIBUSB_1_LIBRARY}
 -)
--
--  if (LIBUSB_1_INCLUDE_DIRS AND LIBUSB_1_LIBRARIES)
--     set(LIBUSB_1_FOUND TRUE)
--  endif (LIBUSB_1_INCLUDE_DIRS AND LIBUSB_1_LIBRARIES)
-+
-+  find_package(PkgConfig)
-+  pkg_check_modules(LIBUSB_1 QUIET libusb-1.0)
-+  set(LIBUSB_1_DEFINITIONS ${LIBUSB_1_CFLAGS} ${LIBUSB_1_CFLAGS_OTHER})
-+
-+  if (NOT LIBUSB_1_FOUND)
-+
-+    find_path(LIBUSB_1_INCLUDE_DIR
-+      NAMES
-+          libusb.h
-+      PATHS
-+        /usr/include
-+        /usr/local/include
-+        /opt/local/include
-+        /sw/include
-+          PATH_SUFFIXES
-+            libusb-1.0
-+    )
-+
-+    find_library(LIBUSB_1_LIBRARY
-+      NAMES
-+        usb-1.0
-+      PATHS
-+        /usr/lib
-+        /usr/local/lib
-+        /opt/local/lib
-+        /sw/lib
-+    )
-+
-+    set(LIBUSB_1_INCLUDE_DIRS
-+      ${LIBUSB_1_INCLUDE_DIR}
-+    )
-+    set(LIBUSB_1_LIBRARIES
-+      ${LIBUSB_1_LIBRARY}
-+    )
-+
-+    if (LIBUSB_1_INCLUDE_DIRS AND LIBUSB_1_LIBRARIES)
-+       set(LIBUSB_1_FOUND TRUE)
-+    endif (LIBUSB_1_INCLUDE_DIRS AND LIBUSB_1_LIBRARIES)
-+
-+  endif (NOT LIBUSB_1_FOUND)
++  )
+ 
+   if (LIBUSB_1_INCLUDE_DIRS AND LIBUSB_1_LIBRARIES)
+      set(LIBUSB_1_FOUND TRUE)
++  else (LIBUSB_1_INCLUDE_DIRS AND LIBUSB_1_LIBRARIES)
++     find_package(PkgConfig)
++     pkg_check_modules(LIBUSB_1 QUIET libusb-1.0)
++     set(LIBUSB_1_DEFINITIONS ${LIBUSB_1_CFLAGS} ${LIBUSB_1_CFLAGS_OTHER})
+   endif (LIBUSB_1_INCLUDE_DIRS AND LIBUSB_1_LIBRARIES)
  
    if (LIBUSB_1_FOUND)
-     if (NOT USB-1_FIND_QUIETLY)
-@@ -88,13 +97,13 @@
+@@ -88,13 +92,13 @@
      set(CMAKE_REQUIRED_INCLUDES ${LIBUSB_1_INCLUDE_DIRS})
      set(CMAKE_REQUIRED_LIBRARIES ${LIBUSB_1_LIBRARIES})
      include (CheckCXXSourceCompiles)
