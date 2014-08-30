@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 0.9.8.1 alpha amd64 armel armhf hppa i386 m68k mips mipsel powerpc ppc64 s390x sparc x32
+# SymbolsHelper-Confirmed: 0.9.8.1 alpha amd64 arm64 armel armhf hppa i386 m68k mips mipsel powerpc ppc64 ppc64el s390x sparc x32
 libindiAlignmentDriver.so.0 libindialignmentdriver0 #MINVER#
  _ZN4INDI18AlignmentSubsystem10ConvexHull10CheckEulerEiii@Base 0.9.8.1
  _ZN4INDI18AlignmentSubsystem10ConvexHull10CleanEdgesEv@Base 0.9.8.1
@@ -39,6 +39,9 @@ libindiAlignmentDriver.so.0 libindialignmentdriver0 #MINVER#
  _ZN4INDI18AlignmentSubsystem10MathPlugin10InitialiseEPNS0_16InMemoryDatabaseE@Base 0.9.8.1
  _ZN4INDI18AlignmentSubsystem10MathPlugin28GetApproximateMountAlignmentEv@Base 0.9.8.1
  _ZN4INDI18AlignmentSubsystem10MathPlugin28SetApproximateMountAlignmentENS0_14MountAlignmentE@Base 0.9.8.1
+ (arch=m68k)_ZN4INDI18AlignmentSubsystem10MathPluginD0Ev@Base 0.9.8.1
+ (arch=m68k)_ZN4INDI18AlignmentSubsystem10MathPluginD1Ev@Base 0.9.8.1
+ (arch=m68k)_ZN4INDI18AlignmentSubsystem10MathPluginD2Ev@Base 0.9.8.1
  _ZN4INDI18AlignmentSubsystem13DBG_ALIGNMENTE@Base 0.9.8.1
  _ZN4INDI18AlignmentSubsystem15BasicMathPlugin10InitialiseEPNS0_16InMemoryDatabaseE@Base 0.9.8.1
  _ZN4INDI18AlignmentSubsystem15BasicMathPlugin15MatrixInvert3x3EP10gsl_matrixS3_@Base 0.9.8.1
@@ -103,15 +106,19 @@ libindiAlignmentDriver.so.0 libindialignmentdriver0 #MINVER#
  _ZN4INDI18AlignmentSubsystem31MapPropertiesToInMemoryDatabaseD0Ev@Base 0.9.8.1
  _ZN4INDI18AlignmentSubsystem31MapPropertiesToInMemoryDatabaseD1Ev@Base 0.9.8.1
  _ZN4INDI18AlignmentSubsystem31MapPropertiesToInMemoryDatabaseD2Ev@Base 0.9.8.1
+ (arch=m68k)_ZN4INDI18AlignmentSubsystem32AlignmentSubsystemForMathPluginsD0Ev@Base 0.9.8.1
+ (arch=m68k)_ZN4INDI18AlignmentSubsystem32AlignmentSubsystemForMathPluginsD1Ev@Base 0.9.8.1
+ (arch=m68k)_ZN4INDI18AlignmentSubsystem32AlignmentSubsystemForMathPluginsD2Ev@Base 0.9.8.1
  _ZN4INDI18AlignmentSubsystem40TelescopeDirectionVectorSupportFunctions47SphericalCoordinateFromTelescopeDirectionVectorENS0_24TelescopeDirectionVectorERdNS1_21AzimuthAngleDirectionES3_NS1_19PolarAngleDirectionE@Base 0.9.8.1
  _ZN4INDI18AlignmentSubsystem40TelescopeDirectionVectorSupportFunctions47TelescopeDirectionVectorFromSphericalCoordinateEdNS1_21AzimuthAngleDirectionEdNS1_19PolarAngleDirectionE@Base 0.9.8.1
  _ZN4INDI18AlignmentSubsystem40TelescopeDirectionVectorSupportFunctionsD0Ev@Base 0.9.8.1
  _ZN4INDI18AlignmentSubsystem40TelescopeDirectionVectorSupportFunctionsD1Ev@Base 0.9.8.1
  _ZN4INDI18AlignmentSubsystem40TelescopeDirectionVectorSupportFunctionsD2Ev@Base 0.9.8.1
  _ZNK4INDI18AlignmentSubsystem16InMemoryDatabase26CheckForDuplicateSyncPointERKNS0_22AlignmentDatabaseEntryEd@Base 0.9.8.1
- (optional=templinst)_ZNSt12_Destroy_auxILb0EE9__destroyIPSsEEvT_S3_@Base 0.9.8.1
+ (optional=templinst|arch=!m68k)_ZNSt12_Destroy_auxILb0EE9__destroyIPSsEEvT_S3_@Base 0.9.8.1
  (optional=templinst)_ZNSt6vectorIN4INDI18AlignmentSubsystem22AlignmentDatabaseEntryESaIS2_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS2_S4_EERKS2_@Base 0.9.8.1
- (optional=templinst|arch=armel armhf i386 m68k mips mipsel powerpc)_ZNSt6vectorIN4INDI18AlignmentSubsystem22AlignmentDatabaseEntryESaIS2_EE8_M_eraseEN9__gnu_cxx17__normal_iteratorIPS2_S4_EE@Base 0.9.8.1
+ (optional=templinst|arch=m68k)_ZNSt6vectorIN4INDI18AlignmentSubsystem22AlignmentDatabaseEntryESaIS2_EE5eraseEN9__gnu_cxx17__normal_iteratorIPS2_S4_EE@Base 0.9.8.1
+ (optional=templinst|arch=armel armhf i386 mips mipsel powerpc)_ZNSt6vectorIN4INDI18AlignmentSubsystem22AlignmentDatabaseEntryESaIS2_EE8_M_eraseEN9__gnu_cxx17__normal_iteratorIPS2_S4_EE@Base 0.9.8.1
  (optional=templinst)_ZNSt6vectorIN4INDI18AlignmentSubsystem22AlignmentDatabaseEntryESaIS2_EED1Ev@Base 0.9.8.1
  (optional=templinst)_ZNSt6vectorIN4INDI18AlignmentSubsystem22AlignmentDatabaseEntryESaIS2_EED2Ev@Base 0.9.8.1
  (optional=templinst)_ZNSt6vectorIN4INDI18AlignmentSubsystem24TelescopeDirectionVectorESaIS2_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS2_S4_EERKS2_@Base 0.9.8.1
@@ -120,11 +127,11 @@ libindiAlignmentDriver.so.0 libindialignmentdriver0 #MINVER#
  (optional=templinst)_ZNSt6vectorISsSaISsEED2Ev@Base 0.9.8.1
  (optional=templinst|arch=alpha armel armhf i386 mips mipsel powerpc ppc64 s390x sparc)_ZNSt8_Rb_treeIdSt4pairIKdPKN4INDI18AlignmentSubsystem22AlignmentDatabaseEntryEESt10_Select1stIS7_ESt4lessIdESaIS7_EE17_M_insert_unique_ESt23_Rb_tree_const_iteratorIS7_ERKS7_@Base 0.9.8.1
  (optional=templinst)_ZNSt8_Rb_treeIdSt4pairIKdPKN4INDI18AlignmentSubsystem22AlignmentDatabaseEntryEESt10_Select1stIS7_ESt4lessIdESaIS7_EE24_M_get_insert_unique_posERS1_@Base 0.9.8.1
- (optional=templinst|arch=amd64 hppa m68k x32)_ZNSt8_Rb_treeIdSt4pairIKdPKN4INDI18AlignmentSubsystem22AlignmentDatabaseEntryEESt10_Select1stIS7_ESt4lessIdESaIS7_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS7_ERS1_@Base 0.9.8.1
+ (optional=templinst|arch=amd64 arm64 hppa m68k ppc64el x32)_ZNSt8_Rb_treeIdSt4pairIKdPKN4INDI18AlignmentSubsystem22AlignmentDatabaseEntryEESt10_Select1stIS7_ESt4lessIdESaIS7_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS7_ERS1_@Base 0.9.8.1
  (optional=templinst)_ZNSt8_Rb_treeIdSt4pairIKdPKN4INDI18AlignmentSubsystem22AlignmentDatabaseEntryEESt10_Select1stIS7_ESt4lessIdESaIS7_EE8_M_eraseEPSt13_Rb_tree_nodeIS7_E@Base 0.9.8.1
  (optional=templinst|arch=alpha armel armhf i386 mips mipsel powerpc ppc64 s390x sparc)_ZNSt8_Rb_treeIiSt4pairIKiiESt10_Select1stIS2_ESt4lessIiESaIS2_EE17_M_insert_unique_ESt23_Rb_tree_const_iteratorIS2_ERKS2_@Base 0.9.8.1
  (optional=templinst)_ZNSt8_Rb_treeIiSt4pairIKiiESt10_Select1stIS2_ESt4lessIiESaIS2_EE24_M_get_insert_unique_posERS1_@Base 0.9.8.1
- (optional=templinst|arch=amd64 hppa m68k x32)_ZNSt8_Rb_treeIiSt4pairIKiiESt10_Select1stIS2_ESt4lessIiESaIS2_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS2_ERS1_@Base 0.9.8.1
+ (optional=templinst|arch=amd64 arm64 hppa m68k ppc64el x32)_ZNSt8_Rb_treeIiSt4pairIKiiESt10_Select1stIS2_ESt4lessIiESaIS2_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS2_ERS1_@Base 0.9.8.1
  (optional=templinst)_ZNSt8_Rb_treeIiSt4pairIKiiESt10_Select1stIS2_ESt4lessIiESaIS2_EE8_M_eraseEPSt13_Rb_tree_nodeIS2_E@Base 0.9.8.1
  _ZTIN4INDI18AlignmentSubsystem10ConvexHullE@Base 0.9.8.1
  _ZTIN4INDI18AlignmentSubsystem10MathPluginE@Base 0.9.8.1
@@ -157,5 +164,6 @@ libindiAlignmentDriver.so.0 libindialignmentdriver0 #MINVER#
  _ZTVN4INDI18AlignmentSubsystem32AlignmentSubsystemForMathPluginsE@Base 0.9.8.1
  _ZTVN4INDI18AlignmentSubsystem40TelescopeDirectionVectorSupportFunctionsE@Base 0.9.8.1
  (c++)"non-virtual thunk to INDI::AlignmentSubsystem::AlignmentSubsystemForDrivers::~AlignmentSubsystemForDrivers()@Base" 0.9.8.1
+ (c++|arch=m68k)"non-virtual thunk to INDI::AlignmentSubsystem::AlignmentSubsystemForMathPlugins::~AlignmentSubsystemForMathPlugins()@Base" 0.9.8.1
  (c++)"non-virtual thunk to INDI::AlignmentSubsystem::BasicMathPlugin::~BasicMathPlugin()@Base" 0.9.8.1
  (c++)"non-virtual thunk to INDI::AlignmentSubsystem::BuiltInMathPlugin::~BuiltInMathPlugin()@Base" 0.9.8.1

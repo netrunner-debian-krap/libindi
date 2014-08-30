@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 0.9.8.1 alpha amd64 armel armhf hppa i386 m68k mips mipsel powerpc ppc64 s390x sparc x32
+# SymbolsHelper-Confirmed: 0.9.8.1 alpha amd64 armel armhf hppa i386 kfreebsd-amd64 m68k mips mipsel powerpc ppc64 s390x sparc x32
 libindidriver.so.0c libindidriver0c #MINVER#
  ALIGNMENT_TAB@Base 0.9.8.1
  COMMUNICATION_TAB@Base 0.9.7
@@ -72,12 +72,12 @@ libindidriver.so.0c libindidriver0c #MINVER#
  IUUpdateNumber@Base 0.9.7
  IUUpdateSwitch@Base 0.9.7
  IUUpdateText@Base 0.9.7
- InitLookupTable@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)InitLookupTable@Base 0.9.8.1
  MAIN_CONTROL_TAB@Base 0.9.7
  MOTION_TAB@Base 0.9.7
  OPTIONS_TAB@Base 0.9.7
  RAPIDGUIDE_TAB@Base 0.9.8.1
- RGB2YUV@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)RGB2YUV@Base 0.9.8.1
  SITE_TAB@Base 0.9.7
  _Z9timerfuncPv@Base 0.9.7
  _ZN4INDI10BaseDevice10addMessageEPKc@Base 0.9.7
@@ -351,22 +351,22 @@ libindidriver.so.0c libindidriver0c #MINVER#
  _ZN4INDI9USBDeviceD0Ev@Base 0.9.7
  _ZN4INDI9USBDeviceD1Ev@Base 0.9.7
  _ZN4INDI9USBDeviceD2Ev@Base 0.9.7
- _ZN5PPort11registerBitEPKvi@Base 0.9.8.1
- _ZN5PPort13unregisterBitEPKvi@Base 0.9.8.1
- _ZN5PPort5resetEv@Base 0.9.8.1
- _ZN5PPort6commitEv@Base 0.9.8.1
- _ZN5PPort6setBitEPKvib@Base 0.9.8.1
- _ZN5PPort7setPortEi@Base 0.9.8.1
- _ZN5PPortC1Ei@Base 0.9.8.1
- _ZN5PPortC1Ev@Base 0.9.8.1
- _ZN5PPortC2Ei@Base 0.9.8.1
- _ZN5PPortC2Ev@Base 0.9.8.1
- _ZN5PPortD1Ev@Base 0.9.8.1
- _ZN5PPortD2Ev@Base 0.9.8.1
- _ZN6port_tC1Ei@Base 0.9.8.1
- _ZN6port_tC2Ei@Base 0.9.8.1
- _ZN6port_tD1Ev@Base 0.9.8.1
- _ZN6port_tD2Ev@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)_ZN5PPort11registerBitEPKvi@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)_ZN5PPort13unregisterBitEPKvi@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)_ZN5PPort5resetEv@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)_ZN5PPort6commitEv@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)_ZN5PPort6setBitEPKvib@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)_ZN5PPort7setPortEi@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)_ZN5PPortC1Ei@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)_ZN5PPortC1Ev@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)_ZN5PPortC2Ei@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)_ZN5PPortC2Ev@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)_ZN5PPortD1Ev@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)_ZN5PPortD2Ev@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)_ZN6port_tC1Ei@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)_ZN6port_tC2Ei@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)_ZN6port_tD1Ev@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)_ZN6port_tD2Ev@Base 0.9.8.1
  _ZN7CCDChip12setFrameTypeENS_9CCD_FRAMEE@Base 0.9.7
  _ZN7CCDChip12setPixelSizeEff@Base 0.9.7
  _ZN7CCDChip13setInterlacedEb@Base 0.9.7
@@ -387,66 +387,66 @@ libindidriver.so.0c libindidriver0c #MINVER#
  _ZN7CCDChipC2Ev@Base 0.9.7
  _ZN7CCDChipD1Ev@Base 0.9.7
  _ZN7CCDChipD2Ev@Base 0.9.7
- _ZN9V4L2_Base10connectCamEPKcPciii@Base 0.9.8.1
- _ZN9V4L2_Base10errno_exitEPKcPc@Base 0.9.8.1
- _ZN9V4L2_Base10findMinMaxEv@Base 0.9.8.1
- _ZN9V4L2_Base10getControlEjPdPc@Base 0.9.8.1
- _ZN9V4L2_Base10init_userpEj@Base 0.9.8.1
- _ZN9V4L2_Base10query_ctrlEjRdS0_S0_S0_Pc@Base 0.9.8.1
- _ZN9V4L2_Base10read_frameEPc@Base 0.9.8.1
- _ZN9V4L2_Base11getcroprectEv@Base 0.9.8.1
- _ZN9V4L2_Base11init_deviceEPc@Base 0.9.8.1
- _ZN9V4L2_Base11open_deviceEPKcPc@Base 0.9.8.1
- _ZN9V4L2_Base11setcroprectEiiiiPc@Base 0.9.8.1
- _ZN9V4L2_Base12allocBuffersEv@Base 0.9.8.1
- _ZN9V4L2_Base12check_deviceEPc@Base 0.9.8.1
- _ZN9V4L2_Base12close_deviceEv@Base 0.9.8.1
- _ZN9V4L2_Base13disconnectCamEb@Base 0.9.8.1
- _ZN9V4L2_Base13getDeviceNameEv@Base 0.9.8.1
- _ZN9V4L2_Base13getMaxMinSizeERiS0_S0_S0_@Base 0.9.8.1
- _ZN9V4L2_Base13getframeratesEP22_ISwitchVectorPropertyP22_INumberVectorProperty@Base 0.9.8.1
- _ZN9V4L2_Base13queryControlsEP22_INumberVectorPropertyPjPP22_ISwitchVectorPropertyS2_PKcS7_@Base 0.9.8.1
- _ZN9V4L2_Base13setINTControlEjdPc@Base 0.9.8.1
- _ZN9V4L2_Base13setOPTControlEjjPc@Base 0.9.8.1
- _ZN9V4L2_Base13uninit_deviceEPc@Base 0.9.8.1
- _ZN9V4L2_Base14enumerate_ctrlEv@Base 0.9.8.1
- _ZN9V4L2_Base14enumerate_menuEv@Base 0.9.8.1
- _ZN9V4L2_Base14getColorBufferEv@Base 0.9.8.1
- _ZN9V4L2_Base14isLXmodCapableEv@Base 0.9.8.1
- _ZN9V4L2_Base14setcapturesizeEjjPc@Base 0.9.8.1
- _ZN9V4L2_Base14stop_capturingEPc@Base 0.9.8.1
- _ZN9V4L2_Base15getcapturesizesEP22_ISwitchVectorPropertyP22_INumberVectorProperty@Base 0.9.8.1
- _ZN9V4L2_Base15pwcsetframerateE10v4l2_fractPc@Base 0.9.8.1
- _ZN9V4L2_Base15start_capturingEPc@Base 0.9.8.1
- _ZN9V4L2_Base15stdgetframerateEv@Base 0.9.8.1
- _ZN9V4L2_Base15stdsetframerateE10v4l2_fractPc@Base 0.9.8.1
- _ZN9V4L2_Base16queryExtControlsEP22_INumberVectorPropertyPjPP22_ISwitchVectorPropertyS2_PKcS7_@Base 0.9.8.1
- _ZN9V4L2_Base16queryINTControlsEP22_INumberVectorProperty@Base 0.9.8.1
- _ZN9V4L2_Base16registerCallbackEPFvPvES0_@Base 0.9.8.1
- _ZN9V4L2_Base16setcaptureformatEjPc@Base 0.9.8.1
- _ZN9V4L2_Base17getcaptureformatsEP22_ISwitchVectorProperty@Base 0.9.8.1
- _ZN9V4L2_Base18enumerate_ext_ctrlEv@Base 0.9.8.1
- _ZN9V4L2_Base4getUEv@Base 0.9.8.1
- _ZN9V4L2_Base4getVEv@Base 0.9.8.1
- _ZN9V4L2_Base4getYEv@Base 0.9.8.1
- _ZN9V4L2_Base6xioctlEiiPv@Base 0.9.8.1
- _ZN9V4L2_Base7setSizeEii@Base 0.9.8.1
- _ZN9V4L2_Base8getWidthEv@Base 0.9.8.1
- _ZN9V4L2_Base8newFrameEiPv@Base 0.9.8.1
- _ZN9V4L2_Base8setinputEjPc@Base 0.9.8.1
- _ZN9V4L2_Base9getFormatEv@Base 0.9.8.1
- _ZN9V4L2_Base9getHeightEv@Base 0.9.8.1
- _ZN9V4L2_Base9getinputsEP22_ISwitchVectorProperty@Base 0.9.8.1
- _ZN9V4L2_Base9init_mmapEPc@Base 0.9.8.1
- _ZN9V4L2_Base9init_readEj@Base 0.9.8.1
- _ZN9V4L2_BaseC1Ev@Base 0.9.8.1
- _ZN9V4L2_BaseC2Ev@Base 0.9.8.1
- _ZN9V4L2_BaseD0Ev@Base 0.9.8.1
- _ZN9V4L2_BaseD1Ev@Base 0.9.8.1
- _ZN9V4L2_BaseD2Ev@Base 0.9.8.1
- _ZNK5PPort13isRegisterBitEPKvi@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)_ZN9V4L2_Base10connectCamEPKcPciii@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)_ZN9V4L2_Base10errno_exitEPKcPc@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)_ZN9V4L2_Base10findMinMaxEv@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)_ZN9V4L2_Base10getControlEjPdPc@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)_ZN9V4L2_Base10init_userpEj@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)_ZN9V4L2_Base10query_ctrlEjRdS0_S0_S0_Pc@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)_ZN9V4L2_Base10read_frameEPc@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)_ZN9V4L2_Base11getcroprectEv@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)_ZN9V4L2_Base11init_deviceEPc@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)_ZN9V4L2_Base11open_deviceEPKcPc@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)_ZN9V4L2_Base11setcroprectEiiiiPc@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)_ZN9V4L2_Base12allocBuffersEv@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)_ZN9V4L2_Base12check_deviceEPc@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)_ZN9V4L2_Base12close_deviceEv@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)_ZN9V4L2_Base13disconnectCamEb@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)_ZN9V4L2_Base13getDeviceNameEv@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)_ZN9V4L2_Base13getMaxMinSizeERiS0_S0_S0_@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)_ZN9V4L2_Base13getframeratesEP22_ISwitchVectorPropertyP22_INumberVectorProperty@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)_ZN9V4L2_Base13queryControlsEP22_INumberVectorPropertyPjPP22_ISwitchVectorPropertyS2_PKcS7_@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)_ZN9V4L2_Base13setINTControlEjdPc@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)_ZN9V4L2_Base13setOPTControlEjjPc@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)_ZN9V4L2_Base13uninit_deviceEPc@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)_ZN9V4L2_Base14enumerate_ctrlEv@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)_ZN9V4L2_Base14enumerate_menuEv@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)_ZN9V4L2_Base14getColorBufferEv@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)_ZN9V4L2_Base14isLXmodCapableEv@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)_ZN9V4L2_Base14setcapturesizeEjjPc@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)_ZN9V4L2_Base14stop_capturingEPc@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)_ZN9V4L2_Base15getcapturesizesEP22_ISwitchVectorPropertyP22_INumberVectorProperty@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)_ZN9V4L2_Base15pwcsetframerateE10v4l2_fractPc@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)_ZN9V4L2_Base15start_capturingEPc@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)_ZN9V4L2_Base15stdgetframerateEv@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)_ZN9V4L2_Base15stdsetframerateE10v4l2_fractPc@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)_ZN9V4L2_Base16queryExtControlsEP22_INumberVectorPropertyPjPP22_ISwitchVectorPropertyS2_PKcS7_@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)_ZN9V4L2_Base16queryINTControlsEP22_INumberVectorProperty@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)_ZN9V4L2_Base16registerCallbackEPFvPvES0_@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)_ZN9V4L2_Base16setcaptureformatEjPc@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)_ZN9V4L2_Base17getcaptureformatsEP22_ISwitchVectorProperty@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)_ZN9V4L2_Base18enumerate_ext_ctrlEv@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)_ZN9V4L2_Base4getUEv@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)_ZN9V4L2_Base4getVEv@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)_ZN9V4L2_Base4getYEv@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)_ZN9V4L2_Base6xioctlEiiPv@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)_ZN9V4L2_Base7setSizeEii@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)_ZN9V4L2_Base8getWidthEv@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)_ZN9V4L2_Base8newFrameEiPv@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)_ZN9V4L2_Base8setinputEjPc@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)_ZN9V4L2_Base9getFormatEv@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)_ZN9V4L2_Base9getHeightEv@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)_ZN9V4L2_Base9getinputsEP22_ISwitchVectorProperty@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)_ZN9V4L2_Base9init_mmapEPc@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)_ZN9V4L2_Base9init_readEj@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)_ZN9V4L2_BaseC1Ev@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)_ZN9V4L2_BaseC2Ev@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)_ZN9V4L2_BaseD0Ev@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)_ZN9V4L2_BaseD1Ev@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)_ZN9V4L2_BaseD2Ev@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)_ZNK5PPort13isRegisterBitEPKvi@Base 0.9.8.1
  _ZNK7CCDChip8getNAxisEv@Base 0.9.8.1
- (optional=templinst)_ZNKSt5ctypeIcE8do_widenEc@Base 0.9.8.1
+ (optional=templinst|arch=!m68k)_ZNKSt5ctypeIcE8do_widenEc@Base 0.9.8.1
  (optional=templinst)_ZNSt3tr114_Function_base13_Base_managerIPFvPKcddEE10_M_managerERNS_9_Any_dataERKS7_NS_18_Manager_operationE@Base 0.9.7
  (optional=templinst)_ZNSt3tr114_Function_base13_Base_managerIPFvPKciEE10_M_managerERNS_9_Any_dataERKS7_NS_18_Manager_operationE@Base 0.9.7
  (optional=templinst)_ZNSt3tr117_Function_handlerIFvPKc7ISStateEPFvS2_iEE9_M_invokeERKNS_9_Any_dataES2_S3_@Base 0.9.7
@@ -457,8 +457,9 @@ libindidriver.so.0c libindidriver0c #MINVER#
  _ZNSt3tr117bad_function_callD2Ev@Base 0.9.7
  (optional=templinst)_ZNSt6vectorIPKcSaIS1_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS1_S3_EERKS1_@Base 0.9.7
  (optional=templinst)_ZNSt6vectorIPN4INDI8PropertyESaIS2_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS2_S4_EERKS2_@Base 0.9.7
- (optional=templinst)_ZNSt6vectorIPN4INDI8PropertyESaIS2_EE8_M_eraseEN9__gnu_cxx17__normal_iteratorIPS2_S4_EE@Base 0.9.8.1
- _ZTI9V4L2_Base@Base 0.9.8.1
+ (optional=templinst|arch=m68k)_ZNSt6vectorIPN4INDI8PropertyESaIS2_EE5eraseEN9__gnu_cxx17__normal_iteratorIPS2_S4_EE@Base 0.9.8.1
+ (optional=templinst|arch=!m68k)_ZNSt6vectorIPN4INDI8PropertyESaIS2_EE8_M_eraseEN9__gnu_cxx17__normal_iteratorIPS2_S4_EE@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)_ZTI9V4L2_Base@Base 0.9.8.1
  _ZTIFvPKcddE@Base 0.9.7
  _ZTIFvPKciE@Base 0.9.7
  _ZTIN4INDI10BaseDeviceE@Base 0.9.7
@@ -475,7 +476,7 @@ libindidriver.so.0c libindidriver0c #MINVER#
  _ZTINSt3tr117bad_function_callE@Base 0.9.7
  _ZTIPFvPKcddE@Base 0.9.7
  _ZTIPFvPKciE@Base 0.9.7
- _ZTS9V4L2_Base@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)_ZTS9V4L2_Base@Base 0.9.8.1
  _ZTSFvPKcddE@Base 0.9.7
  _ZTSFvPKciE@Base 0.9.7
  _ZTSN4INDI10BaseDeviceE@Base 0.9.7
@@ -492,7 +493,7 @@ libindidriver.so.0c libindidriver0c #MINVER#
  _ZTSNSt3tr117bad_function_callE@Base 0.9.7
  _ZTSPFvPKcddE@Base 0.9.7
  _ZTSPFvPKciE@Base 0.9.7
- _ZTV9V4L2_Base@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)_ZTV9V4L2_Base@Base 0.9.8.1
  _ZTVN4INDI10ControllerE@Base 0.9.7
  _ZTVN4INDI11FilterWheelE@Base 0.9.7
  _ZTVN4INDI13DefaultDeviceE@Base 0.9.7
@@ -510,23 +511,23 @@ libindidriver.so.0c libindidriver0c #MINVER#
  addXMLAtt@Base 0.9.7
  addXMLEle@Base 0.9.7
  appXMLEle@Base 0.9.7
- bayer16_2_rgb24@Base 0.9.8.1
- bayer2rgb24@Base 0.9.8.1
- ccvt_420p_bgr24@Base 0.9.8.1
- ccvt_420p_bgr32@Base 0.9.8.1
- ccvt_420p_rgb24@Base 0.9.8.1
- ccvt_420p_rgb32@Base 0.9.8.1
- ccvt_bgr24_bgr32@Base 0.9.8.1
- ccvt_bgr24_rgb32@Base 0.9.8.1
- ccvt_bgr32_bgr24@Base 0.9.8.1
- ccvt_bgr32_rgb24@Base 0.9.8.1
- ccvt_rgb24_bgr32@Base 0.9.8.1
- ccvt_rgb24_rgb32@Base 0.9.8.1
- ccvt_rgb32_bgr24@Base 0.9.8.1
- ccvt_rgb32_rgb24@Base 0.9.8.1
- ccvt_yuyv_420p@Base 0.9.8.1
- ccvt_yuyv_bgr32@Base 0.9.8.1
- ccvt_yuyv_rgb32@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)bayer16_2_rgb24@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)bayer2rgb24@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)ccvt_420p_bgr24@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)ccvt_420p_bgr32@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)ccvt_420p_rgb24@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)ccvt_420p_rgb32@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)ccvt_bgr24_bgr32@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)ccvt_bgr24_rgb32@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)ccvt_bgr32_bgr24@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)ccvt_bgr32_rgb24@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)ccvt_rgb24_bgr32@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)ccvt_rgb24_rgb32@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)ccvt_rgb32_bgr24@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)ccvt_rgb32_rgb24@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)ccvt_yuyv_420p@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)ccvt_yuyv_bgr32@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)ccvt_yuyv_rgb32@Base 0.9.8.1
  clientMsgCB@Base 0.9.7
  clixml@Base 0.9.7
  cloneXMLEle@Base 0.9.7
@@ -535,8 +536,8 @@ libindidriver.so.0c libindidriver0c #MINVER#
  crackIPerm@Base 0.9.7
  crackISRule@Base 0.9.7
  crackISState@Base 0.9.7
- decode_jpeg_gray_raw@Base 0.9.8.1
- decode_jpeg_raw@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)decode_jpeg_gray_raw@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)decode_jpeg_raw@Base 0.9.8.1
  deferLoop0@Base 0.9.7
  deferLoop@Base 0.9.7
  delLilXML@Base 0.9.7
@@ -544,7 +545,7 @@ libindidriver.so.0c libindidriver0c #MINVER#
  dispatch@Base 0.9.7
  editXMLAtt@Base 0.9.7
  editXMLEle@Base 0.9.7
- encode_jpeg_raw@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)encode_jpeg_raw@Base 0.9.8.1
  entityXML@Base 0.9.7
  escapeXML@Base 0.9.8.1
  eventLoop@Base 0.9.7
@@ -560,7 +561,7 @@ libindidriver.so.0c libindidriver0c #MINVER#
  lilxmlMalloc@Base 0.9.7
  main@Base 0.9.7
  me@Base 0.9.7
- mjpegtoyuv420p@Base 0.9.8.1
+ (arch=!kfreebsd-amd64 !kfreebsd-i386)mjpegtoyuv420p@Base 0.9.8.1
  nXMLAtt@Base 0.9.7
  nXMLEle@Base 0.9.7
  nameXMLAtt@Base 0.9.7
