@@ -1,10 +1,10 @@
-libindi (0.9.8.1-5) UNRELEASED; urgency=medium
+libindi (0.9.8.1-5) unstable; urgency=medium
 
   * Update symbols with the buildds logs and kfreebsd porter box log.
   * New patch: freebsd_support
   * Update build dependencies.
 
- -- Maximiliano Curia <maxy@debian.org>  Sat, 30 Aug 2014 02:50:51 +0200
+ -- Maximiliano Curia <maxy@debian.org>  Sat, 30 Aug 2014 04:48:12 +0200
 
 libindi (0.9.8.1-4) unstable; urgency=medium
 
