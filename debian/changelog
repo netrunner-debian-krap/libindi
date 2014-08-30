@@ -1,6 +1,7 @@
 libindi (0.9.8.1-5) UNRELEASED; urgency=medium
 
   * Update symbols with the buildds logs and kfreebsd porter box log.
+  * New patch: freebsd_support
 
  -- Maximiliano Curia <maxy@debian.org>  Sat, 30 Aug 2014 02:50:51 +0200
 
