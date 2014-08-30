@@ -1,7 +1,7 @@
 Index: libindi/cmake_modules/FindUSB-1.cmake
 ===================================================================
---- libindi.orig/cmake_modules/FindUSB-1.cmake	2014-08-30 03:56:46.016848990 +0200
-+++ libindi/cmake_modules/FindUSB-1.cmake	2014-08-30 04:26:46.311326552 +0200
+--- libindi.orig/cmake_modules/FindUSB-1.cmake	2014-08-30 04:27:26.897669303 +0200
++++ libindi/cmake_modules/FindUSB-1.cmake	2014-08-30 04:27:26.897669303 +0200
 @@ -46,16 +46,16 @@
    # in cache already
    set(LIBUSB_FOUND TRUE)
@@ -56,8 +56,8 @@ Index: libindi/cmake_modules/FindUSB-1.cmake
        message(FATAL_ERROR "Could not find libusb-1.0. Please install libusb-1.0 along with the development package.")
 Index: libindi/libs/indibase/indiusbdevice.h
 ===================================================================
---- libindi.orig/libs/indibase/indiusbdevice.h	2014-08-30 03:56:46.280838205 +0200
-+++ libindi/libs/indibase/indiusbdevice.h	2014-08-30 04:00:32.951579737 +0200
+--- libindi.orig/libs/indibase/indiusbdevice.h	2014-08-30 04:27:26.897669303 +0200
++++ libindi/libs/indibase/indiusbdevice.h	2014-08-30 04:27:26.897669303 +0200
 @@ -1,6 +1,6 @@
  /*******************************************************************************
   Copyright(c) 2011 Gerry Rozema. All rights reserved.
@@ -75,3 +75,15 @@ Index: libindi/libs/indibase/indiusbdevice.h
  
  #include "indibase.h"
  
+Index: libindi/CMakeLists.txt
+===================================================================
+--- libindi.orig/CMakeLists.txt	2014-08-30 04:27:26.873670284 +0200
++++ libindi/CMakeLists.txt	2014-08-30 04:35:42.837424482 +0200
+@@ -81,6 +81,7 @@
+   include_directories(${CFITSIO_INCLUDE_DIR})
+ endif (CFITSIO_FOUND)
+ 
++include_directories(${LIBUSB_1_INCLUDE_DIRS})
+ include_directories(${NOVA_INCLUDE_DIR})
+ 
+ set(liblilxml_SRCS  ${CMAKE_SOURCE_DIR}/libs/lilxml.c )
