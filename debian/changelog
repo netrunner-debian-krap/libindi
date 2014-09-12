@@ -1,3 +1,9 @@
+libindi (0.9.9-1~) UNRELEASED; urgency=medium
+
+  * New upstream release (0.9.9).
+
+ -- Maximiliano Curia <maxy@debian.org>  Fri, 12 Sep 2014 20:26:08 +0200
+
 libindi (0.9.8.1-5.1) unstable; urgency=medium
 
   * Change B-D to libjpeg-dev to finish the transition to libjpeg-turbo
