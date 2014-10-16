@@ -1,3 +1,9 @@
+libindi (0.9.8.1-5.1) unstable; urgency=medium
+
+  * Change B-D to libjpeg-dev to finish the transition to libjpeg-turbo
+
+ -- Ondřej Surý <ondrej@debian.org>  Mon, 29 Sep 2014 15:42:14 +0200
+
 libindi (0.9.8.1-5) unstable; urgency=medium
 
   * Update symbols with the buildds logs and kfreebsd porter box log.
