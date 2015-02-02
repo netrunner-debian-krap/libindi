@@ -5,7 +5,7 @@ Maintainer: Debian Krap Maintainers <debian-qt-kde@lists.debian.org>
 Uploaders: Pino Toscano <pino@debian.org>, Maximiliano Curia <maxy@debian.org>
 Build-Depends: cmake (>= 2.4.7),
                debhelper (>= 9),
-               libcfitsio3-dev,
+               libcfitsio-dev,
                libgsl0-dev,
                libjpeg-dev,
                libnova-dev (>= 0.14.0),
