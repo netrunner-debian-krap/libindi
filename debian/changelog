@@ -2,11 +2,9 @@ libindi (0.9.9-1~) UNRELEASED; urgency=medium
 
   [ Maximiliano Curia ]
   * New upstream release (0.9.9).
-  * Change Build-Dependency to libcfitsio-dev instead of libcfitsio3-dev
-    (Closes: #761723)
 
   [ Adrien Grellier ]
-  * depends on libcfitsio-dev instead of libcfitsio3-dev 
+  * depends on libcfitsio-dev instead of libcfitsio3-dev
     (Closes: #761723)
 
  -- Maximiliano Curia <maxy@debian.org>  Fri, 12 Sep 2014 20:26:08 +0200
