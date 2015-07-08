@@ -10,8 +10,7 @@ export LDFLAGS := $(shell dpkg-buildflags --get LDFLAGS)
 	dh $@ --parallel --with pkgkde_symbolshelper
 
 override_dh_auto_configure:
-	dh_auto_configure -- -DLIB_DESTINATION=/usr/lib/$(DEB_HOST_MULTIARCH) \
-	    -DINDI_MATH_PLUGINS_DIRECTORY=/usr/lib/$(DEB_HOST_MULTIARCH)/indi/MathPlugins/
+	dh_auto_configure -- -DLIB_SUFFIX=/$(DEB_HOST_MULTIARCH)
 
 override_dh_strip:
 	dh_strip --dbg-package=indi-dbg

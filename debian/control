@@ -18,7 +18,7 @@ Homepage: http://www.indilib.org/
 Vcs-Git: git://anonscm.debian.org/pkg-kde/krap/libindi.git
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/krap/libindi.git
 
-Package: libindi0b
+Package: libindi1
 Section: libs
 Architecture: any
 Depends: libindi-data (>= ${source:Version}), ${misc:Depends}, ${shlibs:Depends}
@@ -34,7 +34,7 @@ Description: Instrument-Neutral Device Interface library -- client library
  .
  This package contains the client shared library.
 
-Package: libindidriver0c
+Package: libindidriver1
 Section: libs
 Architecture: any
 Depends: libindi-data (>= ${source:Version}), ${misc:Depends}, ${shlibs:Depends}
@@ -49,7 +49,7 @@ Description: Instrument-Neutral Device Interface library -- driver library
  .
  This package contains the driver shared library.
 
-Package: libindimain0
+Package: libindimain1
 Section: libs
 Architecture: any
 Depends: libindi-data (>= ${source:Version}), ${misc:Depends}, ${shlibs:Depends}
@@ -64,7 +64,7 @@ Description: Instrument-Neutral Device Interface library -- main library
  .
  This package contains the main shared library.
 
-Package: libindialignmentdriver0
+Package: libindialignmentdriver1
 Section: libs
 Architecture: any
 Depends: libindi-plugins (= ${binary:Version}), ${misc:Depends}, ${shlibs:Depends}
@@ -98,10 +98,10 @@ Package: libindi-dev
 Section: libdevel
 Architecture: any
 Depends: libcfitsio3-dev,
-         libindi0b (= ${binary:Version}),
-         libindidriver0c (= ${binary:Version}),
-         libindimain0 (= ${binary:Version}),
-         libindialignmentdriver0 (= ${binary:Version}),
+         libindi1 (= ${binary:Version}),
+         libindidriver1 (= ${binary:Version}),
+         libindimain1 (= ${binary:Version}),
+         libindialignmentdriver1 (= ${binary:Version}),
          libusb-1.0-0-dev,
          ${misc:Depends}
 Description: Instrument-Neutral Device Interface library -- development files
@@ -143,7 +143,7 @@ Package: indi-dbg
 Priority: extra
 Section: debug
 Architecture: any
-Depends: libindi0b (= ${binary:Version}), ${misc:Depends}
+Depends: libindi1 (= ${binary:Version}), ${misc:Depends}
 Suggests: indi-bin (= ${binary:Version})
 Pre-Depends: ${misc:Pre-Depends}
 Multi-Arch: same
