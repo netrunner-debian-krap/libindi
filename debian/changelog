@@ -6,6 +6,9 @@ libindi (1.0.0-1~) UNRELEASED; urgency=medium
   * Follow upstream soversion bump. (Closes: #791746)
   * Update copyright information.
   * Update symbols with kfreebsd builds.
+  * Update patch for freebsd_support for usb support.
+  * Remove patch: no-sys-io.patch
+  * Remove patch: abi.diff
 
   [ Adrien Grellier ]
   * depends on libcfitsio-dev instead of libcfitsio3-dev
