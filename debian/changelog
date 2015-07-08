@@ -3,6 +3,7 @@ libindi (1.0.0-1~) UNRELEASED; urgency=medium
   [ Maximiliano Curia ]
   * New upstream release (0.9.9).
   * New upstream release (1.0.0).
+  * Follow upstream soversion bump. (Closes: #791746)
 
   [ Adrien Grellier ]
   * depends on libcfitsio-dev instead of libcfitsio3-dev
