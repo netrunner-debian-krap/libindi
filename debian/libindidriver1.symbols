@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 1.0.0 amd64
+# SymbolsHelper-Confirmed: 1.0.0 amd64 kfreebsd-i386
 libindidriver.so.1 libindidriver1 #MINVER#
  ALIGNMENT_TAB@Base 1.0.0
  COMMUNICATION_TAB@Base 1.0.0
@@ -72,81 +72,81 @@ libindidriver.so.1 libindidriver1 #MINVER#
  IUUpdateNumber@Base 1.0.0
  IUUpdateSwitch@Base 1.0.0
  IUUpdateText@Base 1.0.0
- InitLookupTable@Base 1.0.0
+ (arch=!kfreebsd-any)InitLookupTable@Base 1.0.0
  MAIN_CONTROL_TAB@Base 1.0.0
  MOTION_TAB@Base 1.0.0
  OPTIONS_TAB@Base 1.0.0
  RAPIDGUIDE_TAB@Base 1.0.0
- RGB2YUV@Base 1.0.0
+ (arch=!kfreebsd-any)RGB2YUV@Base 1.0.0
  SITE_TAB@Base 1.0.0
  _Z9timerfuncPv@Base 1.0.0
- _ZN11V4L2_Decode10getDecoderEv@Base 1.0.0
- _ZN11V4L2_Decode10setDecoderEP12V4L2_Decoder@Base 1.0.0
- _ZN11V4L2_Decode14getDecoderListEv@Base 1.0.0
- _ZN11V4L2_Decode17getDefaultDecoderEv@Base 1.0.0
- _ZN11V4L2_DecodeC1Ev@Base 1.0.0
- _ZN11V4L2_DecodeC2Ev@Base 1.0.0
- _ZN11V4L2_DecodeD1Ev@Base 1.0.0
- _ZN11V4L2_DecodeD2Ev@Base 1.0.0
- _ZN11V4L2_Record11getRecorderEv@Base 1.0.0
- _ZN11V4L2_Record11setRecorderEP13V4L2_Recorder@Base 1.0.0
- _ZN11V4L2_Record15getRecorderListEv@Base 1.0.0
- _ZN11V4L2_Record18getDefaultRecorderEv@Base 1.0.0
- _ZN11V4L2_RecordC1Ev@Base 1.0.0
- _ZN11V4L2_RecordC2Ev@Base 1.0.0
- _ZN11V4L2_RecordD1Ev@Base 1.0.0
- _ZN11V4L2_RecordD2Ev@Base 1.0.0
- _ZN12SER_Recorder10writeFrameEPh@Base 1.0.0
- _ZN12SER_Recorder12write_headerEP10ser_header@Base 1.0.0
- _ZN12SER_Recorder12write_int_leEPj@Base 1.0.0
- _ZN12SER_Recorder14setDefaultMonoEv@Base 1.0.0
- _ZN12SER_Recorder14setpixelformatEj@Base 1.0.0
- _ZN12SER_Recorder14writeFrameMonoEPh@Base 1.0.0
- _ZN12SER_Recorder15setDefaultColorEv@Base 1.0.0
- _ZN12SER_Recorder15writeFrameColorEPh@Base 1.0.0
- _ZN12SER_Recorder16is_little_endianEv@Base 1.0.0
- _ZN12SER_Recorder17write_long_int_leEPm@Base 1.0.0
- _ZN12SER_Recorder4initEv@Base 1.0.0
- _ZN12SER_Recorder4openEPKcPc@Base 1.0.0
- _ZN12SER_Recorder5closeEv@Base 1.0.0
- _ZN12SER_Recorder7setsizeEjj@Base 1.0.0
- _ZN12SER_RecorderC1Ev@Base 1.0.0
- _ZN12SER_RecorderC2Ev@Base 1.0.0
- _ZN12SER_RecorderD0Ev@Base 1.0.0
- _ZN12SER_RecorderD1Ev@Base 1.0.0
- _ZN12SER_RecorderD2Ev@Base 1.0.0
- _ZN12V4L2_Decoder7getNameEv@Base 1.0.0
- _ZN12V4L2_DecoderC1Ev@Base 1.0.0
- _ZN12V4L2_DecoderC2Ev@Base 1.0.0
- _ZN12V4L2_DecoderD0Ev@Base 1.0.0
- _ZN12V4L2_DecoderD1Ev@Base 1.0.0
- _ZN12V4L2_DecoderD2Ev@Base 1.0.0
- _ZN13V4L2_Recorder7getNameEv@Base 1.0.0
- _ZN13V4L2_RecorderC1Ev@Base 1.0.0
- _ZN13V4L2_RecorderC2Ev@Base 1.0.0
- _ZN13V4L2_RecorderD0Ev@Base 1.0.0
- _ZN13V4L2_RecorderD1Ev@Base 1.0.0
- _ZN13V4L2_RecorderD2Ev@Base 1.0.0
- _ZN20V4L2_Builtin_Decoder11usesoftcropEb@Base 1.0.0
- _ZN20V4L2_Builtin_Decoder12allocBuffersEv@Base 1.0.0
- _ZN20V4L2_Builtin_Decoder12getRGBBufferEv@Base 1.0.0
- _ZN20V4L2_Builtin_Decoder14getColorBufferEv@Base 1.0.0
- _ZN20V4L2_Builtin_Decoder17issupportedformatEj@Base 1.0.0
- _ZN20V4L2_Builtin_Decoder19getsupportedformatsEv@Base 1.0.0
- _ZN20V4L2_Builtin_Decoder22init_supported_formatsEv@Base 1.0.0
- _ZN20V4L2_Builtin_Decoder4getUEv@Base 1.0.0
- _ZN20V4L2_Builtin_Decoder4getVEv@Base 1.0.0
- _ZN20V4L2_Builtin_Decoder4getYEv@Base 1.0.0
- _ZN20V4L2_Builtin_Decoder4initEv@Base 1.0.0
- _ZN20V4L2_Builtin_Decoder6decodeEPhP11v4l2_buffer@Base 1.0.0
- _ZN20V4L2_Builtin_Decoder7setcropE9v4l2_crop@Base 1.0.0
- _ZN20V4L2_Builtin_Decoder9resetcropEv@Base 1.0.0
- _ZN20V4L2_Builtin_Decoder9setformatE11v4l2_format@Base 1.0.0
- _ZN20V4L2_Builtin_DecoderC1Ev@Base 1.0.0
- _ZN20V4L2_Builtin_DecoderC2Ev@Base 1.0.0
- _ZN20V4L2_Builtin_DecoderD0Ev@Base 1.0.0
- _ZN20V4L2_Builtin_DecoderD1Ev@Base 1.0.0
- _ZN20V4L2_Builtin_DecoderD2Ev@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN11V4L2_Decode10getDecoderEv@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN11V4L2_Decode10setDecoderEP12V4L2_Decoder@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN11V4L2_Decode14getDecoderListEv@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN11V4L2_Decode17getDefaultDecoderEv@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN11V4L2_DecodeC1Ev@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN11V4L2_DecodeC2Ev@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN11V4L2_DecodeD1Ev@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN11V4L2_DecodeD2Ev@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN11V4L2_Record11getRecorderEv@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN11V4L2_Record11setRecorderEP13V4L2_Recorder@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN11V4L2_Record15getRecorderListEv@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN11V4L2_Record18getDefaultRecorderEv@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN11V4L2_RecordC1Ev@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN11V4L2_RecordC2Ev@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN11V4L2_RecordD1Ev@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN11V4L2_RecordD2Ev@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN12SER_Recorder10writeFrameEPh@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN12SER_Recorder12write_headerEP10ser_header@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN12SER_Recorder12write_int_leEPj@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN12SER_Recorder14setDefaultMonoEv@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN12SER_Recorder14setpixelformatEj@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN12SER_Recorder14writeFrameMonoEPh@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN12SER_Recorder15setDefaultColorEv@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN12SER_Recorder15writeFrameColorEPh@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN12SER_Recorder16is_little_endianEv@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN12SER_Recorder17write_long_int_leEPm@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN12SER_Recorder4initEv@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN12SER_Recorder4openEPKcPc@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN12SER_Recorder5closeEv@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN12SER_Recorder7setsizeEjj@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN12SER_RecorderC1Ev@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN12SER_RecorderC2Ev@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN12SER_RecorderD0Ev@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN12SER_RecorderD1Ev@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN12SER_RecorderD2Ev@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN12V4L2_Decoder7getNameEv@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN12V4L2_DecoderC1Ev@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN12V4L2_DecoderC2Ev@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN12V4L2_DecoderD0Ev@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN12V4L2_DecoderD1Ev@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN12V4L2_DecoderD2Ev@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN13V4L2_Recorder7getNameEv@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN13V4L2_RecorderC1Ev@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN13V4L2_RecorderC2Ev@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN13V4L2_RecorderD0Ev@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN13V4L2_RecorderD1Ev@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN13V4L2_RecorderD2Ev@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN20V4L2_Builtin_Decoder11usesoftcropEb@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN20V4L2_Builtin_Decoder12allocBuffersEv@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN20V4L2_Builtin_Decoder12getRGBBufferEv@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN20V4L2_Builtin_Decoder14getColorBufferEv@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN20V4L2_Builtin_Decoder17issupportedformatEj@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN20V4L2_Builtin_Decoder19getsupportedformatsEv@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN20V4L2_Builtin_Decoder22init_supported_formatsEv@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN20V4L2_Builtin_Decoder4getUEv@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN20V4L2_Builtin_Decoder4getVEv@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN20V4L2_Builtin_Decoder4getYEv@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN20V4L2_Builtin_Decoder4initEv@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN20V4L2_Builtin_Decoder6decodeEPhP11v4l2_buffer@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN20V4L2_Builtin_Decoder7setcropE9v4l2_crop@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN20V4L2_Builtin_Decoder9resetcropEv@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN20V4L2_Builtin_Decoder9setformatE11v4l2_format@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN20V4L2_Builtin_DecoderC1Ev@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN20V4L2_Builtin_DecoderC2Ev@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN20V4L2_Builtin_DecoderD0Ev@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN20V4L2_Builtin_DecoderD1Ev@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN20V4L2_Builtin_DecoderD2Ev@Base 1.0.0
  _ZN4INDI10BaseDevice10addMessageESs@Base 1.0.0
  _ZN4INDI10BaseDevice11getPropertyEPKc9INDI_TYPE@Base 1.0.0
  _ZN4INDI10BaseDevice11isConnectedEv@Base 1.0.0
@@ -311,7 +311,7 @@ libindidriver.so.1 libindidriver1 #MINVER#
  _ZN4INDI16FocuserInterfaceD2Ev@Base 1.0.0
  _ZN4INDI3CCD10GuideNorthEf@Base 1.0.0
  _ZN4INDI3CCD10GuideSouthEf@Base 1.0.0
- _ZN4INDI3CCD10uploadFileEP7CCDChipPKvmbb@Base 1.0.0
+ (subst)_ZN4INDI3CCD10uploadFileEP7CCDChipPKv{size_t}bb@Base 1.0.0
  _ZN4INDI3CCD11ISNewNumberEPKcS2_PdPPci@Base 1.0.0
  _ZN4INDI3CCD11ISNewSwitchEPKcS2_P7ISStatePPci@Base 1.0.0
  _ZN4INDI3CCD12SetCCDParamsEiiiff@Base 1.0.0
@@ -474,22 +474,22 @@ libindidriver.so.1 libindidriver1 #MINVER#
  _ZN4INDI9USBDeviceD0Ev@Base 1.0.0
  _ZN4INDI9USBDeviceD1Ev@Base 1.0.0
  _ZN4INDI9USBDeviceD2Ev@Base 1.0.0
- _ZN5PPort11registerBitEPKvi@Base 1.0.0
- _ZN5PPort13unregisterBitEPKvi@Base 1.0.0
- _ZN5PPort5resetEv@Base 1.0.0
- _ZN5PPort6commitEv@Base 1.0.0
- _ZN5PPort6setBitEPKvib@Base 1.0.0
- _ZN5PPort7setPortEi@Base 1.0.0
- _ZN5PPortC1Ei@Base 1.0.0
- _ZN5PPortC1Ev@Base 1.0.0
- _ZN5PPortC2Ei@Base 1.0.0
- _ZN5PPortC2Ev@Base 1.0.0
- _ZN5PPortD1Ev@Base 1.0.0
- _ZN5PPortD2Ev@Base 1.0.0
- _ZN6port_tC1Ei@Base 1.0.0
- _ZN6port_tC2Ei@Base 1.0.0
- _ZN6port_tD1Ev@Base 1.0.0
- _ZN6port_tD2Ev@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN5PPort11registerBitEPKvi@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN5PPort13unregisterBitEPKvi@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN5PPort5resetEv@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN5PPort6commitEv@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN5PPort6setBitEPKvib@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN5PPort7setPortEi@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN5PPortC1Ei@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN5PPortC1Ev@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN5PPortC2Ei@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN5PPortC2Ev@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN5PPortD1Ev@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN5PPortD2Ev@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN6port_tC1Ei@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN6port_tC2Ei@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN6port_tD1Ev@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN6port_tD2Ev@Base 1.0.0
  _ZN7CCDChip12setFrameTypeENS_9CCD_FRAMEE@Base 1.0.0
  _ZN7CCDChip12setPixelSizeEff@Base 1.0.0
  _ZN7CCDChip13setInterlacedEb@Base 1.0.0
@@ -510,88 +510,88 @@ libindidriver.so.1 libindidriver1 #MINVER#
  _ZN7CCDChipC2Ev@Base 1.0.0
  _ZN7CCDChipD1Ev@Base 1.0.0
  _ZN7CCDChipD2Ev@Base 1.0.0
- _ZN9V4L2_Base10connectCamEPKcPciii@Base 1.0.0
- _ZN9V4L2_Base10errno_exitEPKcPc@Base 1.0.0
- _ZN9V4L2_Base10findMinMaxEv@Base 1.0.0
- _ZN9V4L2_Base10getControlEjPdPc@Base 1.0.0
- _ZN9V4L2_Base10init_userpEj@Base 1.0.0
- _ZN9V4L2_Base10query_ctrlEjRdS0_S0_S0_Pc@Base 1.0.0
- _ZN9V4L2_Base10read_frameEPc@Base 1.0.0
- _ZN9V4L2_Base11getcroprectEv@Base 1.0.0
- _ZN9V4L2_Base11init_deviceEPc@Base 1.0.0
- _ZN9V4L2_Base11open_deviceEPKcPc@Base 1.0.0
- _ZN9V4L2_Base11setRecorderEP13V4L2_Recorder@Base 1.0.0
- _ZN9V4L2_Base11setcroprectEiiiiPc@Base 1.0.0
- _ZN9V4L2_Base12check_deviceEPc@Base 1.0.0
- _ZN9V4L2_Base12close_deviceEv@Base 1.0.0
- _ZN9V4L2_Base12getRGBBufferEv@Base 1.0.0
- _ZN9V4L2_Base13disconnectCamEb@Base 1.0.0
- _ZN9V4L2_Base13getDeviceNameEv@Base 1.0.0
- _ZN9V4L2_Base13getMaxMinSizeERiS0_S0_S0_@Base 1.0.0
- _ZN9V4L2_Base13getframeratesEP22_ISwitchVectorPropertyP22_INumberVectorProperty@Base 1.0.0
- _ZN9V4L2_Base13queryControlsEP22_INumberVectorPropertyPjPP22_ISwitchVectorPropertyS2_PKcS7_@Base 1.0.0
- _ZN9V4L2_Base13setINTControlEjdPc@Base 1.0.0
- _ZN9V4L2_Base13setOPTControlEjjPc@Base 1.0.0
- _ZN9V4L2_Base13uninit_deviceEPc@Base 1.0.0
- _ZN9V4L2_Base14enumerate_ctrlEv@Base 1.0.0
- _ZN9V4L2_Base14enumerate_menuEv@Base 1.0.0
- _ZN9V4L2_Base14getColorBufferEv@Base 1.0.0
- _ZN9V4L2_Base14isLXmodCapableEv@Base 1.0.0
- _ZN9V4L2_Base14setcapturesizeEjjPc@Base 1.0.0
- _ZN9V4L2_Base14stop_capturingEPc@Base 1.0.0
- _ZN9V4L2_Base15getcapturesizesEP22_ISwitchVectorPropertyP22_INumberVectorProperty@Base 1.0.0
- _ZN9V4L2_Base15pwcsetframerateE10v4l2_fractPc@Base 1.0.0
- _ZN9V4L2_Base15start_capturingEPc@Base 1.0.0
- _ZN9V4L2_Base15stdgetframerateEv@Base 1.0.0
- _ZN9V4L2_Base15stdsetframerateE10v4l2_fractPc@Base 1.0.0
- _ZN9V4L2_Base16queryExtControlsEP22_INumberVectorPropertyPjPP22_ISwitchVectorPropertyS2_PKcS7_@Base 1.0.0
- _ZN9V4L2_Base16queryINTControlsEP22_INumberVectorProperty@Base 1.0.0
- _ZN9V4L2_Base16registerCallbackEPFvPvES0_@Base 1.0.0
- _ZN9V4L2_Base16setcaptureformatEjPc@Base 1.0.0
- _ZN9V4L2_Base17getcaptureformatsEP22_ISwitchVectorProperty@Base 1.0.0
- _ZN9V4L2_Base18enumerate_ext_ctrlEv@Base 1.0.0
- _ZN9V4L2_Base4getUEv@Base 1.0.0
- _ZN9V4L2_Base4getVEv@Base 1.0.0
- _ZN9V4L2_Base4getYEv@Base 1.0.0
- _ZN9V4L2_Base6xioctlEiiPv@Base 1.0.0
- _ZN9V4L2_Base7setSizeEii@Base 1.0.0
- _ZN9V4L2_Base8doDecodeEb@Base 1.0.0
- _ZN9V4L2_Base8doRecordEb@Base 1.0.0
- _ZN9V4L2_Base8getWidthEv@Base 1.0.0
- _ZN9V4L2_Base8newFrameEiPv@Base 1.0.0
- _ZN9V4L2_Base8setinputEjPc@Base 1.0.0
- _ZN9V4L2_Base9getFormatEv@Base 1.0.0
- _ZN9V4L2_Base9getHeightEv@Base 1.0.0
- _ZN9V4L2_Base9getinputsEP22_ISwitchVectorProperty@Base 1.0.0
- _ZN9V4L2_Base9init_mmapEPc@Base 1.0.0
- _ZN9V4L2_Base9init_readEj@Base 1.0.0
- _ZN9V4L2_BaseC1Ev@Base 1.0.0
- _ZN9V4L2_BaseC2Ev@Base 1.0.0
- _ZN9V4L2_BaseD0Ev@Base 1.0.0
- _ZN9V4L2_BaseD1Ev@Base 1.0.0
- _ZN9V4L2_BaseD2Ev@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN9V4L2_Base10connectCamEPKcPciii@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN9V4L2_Base10errno_exitEPKcPc@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN9V4L2_Base10findMinMaxEv@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN9V4L2_Base10getControlEjPdPc@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN9V4L2_Base10init_userpEj@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN9V4L2_Base10query_ctrlEjRdS0_S0_S0_Pc@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN9V4L2_Base10read_frameEPc@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN9V4L2_Base11getcroprectEv@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN9V4L2_Base11init_deviceEPc@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN9V4L2_Base11open_deviceEPKcPc@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN9V4L2_Base11setRecorderEP13V4L2_Recorder@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN9V4L2_Base11setcroprectEiiiiPc@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN9V4L2_Base12check_deviceEPc@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN9V4L2_Base12close_deviceEv@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN9V4L2_Base12getRGBBufferEv@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN9V4L2_Base13disconnectCamEb@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN9V4L2_Base13getDeviceNameEv@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN9V4L2_Base13getMaxMinSizeERiS0_S0_S0_@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN9V4L2_Base13getframeratesEP22_ISwitchVectorPropertyP22_INumberVectorProperty@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN9V4L2_Base13queryControlsEP22_INumberVectorPropertyPjPP22_ISwitchVectorPropertyS2_PKcS7_@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN9V4L2_Base13setINTControlEjdPc@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN9V4L2_Base13setOPTControlEjjPc@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN9V4L2_Base13uninit_deviceEPc@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN9V4L2_Base14enumerate_ctrlEv@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN9V4L2_Base14enumerate_menuEv@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN9V4L2_Base14getColorBufferEv@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN9V4L2_Base14isLXmodCapableEv@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN9V4L2_Base14setcapturesizeEjjPc@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN9V4L2_Base14stop_capturingEPc@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN9V4L2_Base15getcapturesizesEP22_ISwitchVectorPropertyP22_INumberVectorProperty@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN9V4L2_Base15pwcsetframerateE10v4l2_fractPc@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN9V4L2_Base15start_capturingEPc@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN9V4L2_Base15stdgetframerateEv@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN9V4L2_Base15stdsetframerateE10v4l2_fractPc@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN9V4L2_Base16queryExtControlsEP22_INumberVectorPropertyPjPP22_ISwitchVectorPropertyS2_PKcS7_@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN9V4L2_Base16queryINTControlsEP22_INumberVectorProperty@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN9V4L2_Base16registerCallbackEPFvPvES0_@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN9V4L2_Base16setcaptureformatEjPc@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN9V4L2_Base17getcaptureformatsEP22_ISwitchVectorProperty@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN9V4L2_Base18enumerate_ext_ctrlEv@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN9V4L2_Base4getUEv@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN9V4L2_Base4getVEv@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN9V4L2_Base4getYEv@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN9V4L2_Base6xioctlEiiPv@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN9V4L2_Base7setSizeEii@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN9V4L2_Base8doDecodeEb@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN9V4L2_Base8doRecordEb@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN9V4L2_Base8getWidthEv@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN9V4L2_Base8newFrameEiPv@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN9V4L2_Base8setinputEjPc@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN9V4L2_Base9getFormatEv@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN9V4L2_Base9getHeightEv@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN9V4L2_Base9getinputsEP22_ISwitchVectorProperty@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN9V4L2_Base9init_mmapEPc@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN9V4L2_Base9init_readEj@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN9V4L2_BaseC1Ev@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN9V4L2_BaseC2Ev@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN9V4L2_BaseD0Ev@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN9V4L2_BaseD1Ev@Base 1.0.0
+ (arch=!kfreebsd-any)_ZN9V4L2_BaseD2Ev@Base 1.0.0
  _ZNK4INDI13DefaultDevice22getInterfaceDescriptorEv@Base 1.0.0
- _ZNK5PPort13isRegisterBitEPKvi@Base 1.0.0
+ (arch=!kfreebsd-any)_ZNK5PPort13isRegisterBitEPKvi@Base 1.0.0
  _ZNK7CCDChip8getNAxisEv@Base 1.0.0
  _ZNKSt5ctypeIcE8do_widenEc@Base 1.0.0
  _ZNSt14_Function_base13_Base_managerIPFvPKc7ISStatePvEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation@Base 1.0.0
  _ZNSt14_Function_base13_Base_managerIPFvPKcddPvEE10_M_managerERSt9_Any_dataRKS7_St18_Manager_operation@Base 1.0.0
  _ZNSt14_Function_base13_Base_managerIPFvPKciPvEE10_M_managerERSt9_Any_dataRKS7_St18_Manager_operation@Base 1.0.0
- (optional=templinst)_ZNSt17_Function_handlerIFvPKc7ISStatePvEPFvS1_iS3_EE9_M_invokeERKSt9_Any_dataOS1_OS2_OS3_@Base 1.0.0
+ (optional=templinst|arch=!kfreebsd-any)_ZNSt17_Function_handlerIFvPKc7ISStatePvEPFvS1_iS3_EE9_M_invokeERKSt9_Any_dataOS1_OS2_OS3_@Base 1.0.0
  (optional=gccinternal)_ZNSt17_Function_handlerIFvPKc7ISStatePvEPFvS1_iS3_EE9_M_invokeERKSt9_Any_dataS1_S2_S3_@Base 1.0.0
- (optional=templinst)_ZNSt17_Function_handlerIFvPKc7ISStatePvEPS4_E9_M_invokeERKSt9_Any_dataOS1_OS2_OS3_@Base 1.0.0
+ (optional=templinst|arch=!kfreebsd-any)_ZNSt17_Function_handlerIFvPKc7ISStatePvEPS4_E9_M_invokeERKSt9_Any_dataOS1_OS2_OS3_@Base 1.0.0
  (optional=gccinternal)_ZNSt17_Function_handlerIFvPKc7ISStatePvEPS4_E9_M_invokeERKSt9_Any_dataS1_S2_S3_@Base 1.0.0
- (optional=templinst)_ZNSt17_Function_handlerIFvPKcdPvEPFvS1_iS2_EE9_M_invokeERKSt9_Any_dataOS1_OdOS2_@Base 1.0.0
+ (optional=templinst|arch=!kfreebsd-any)_ZNSt17_Function_handlerIFvPKcdPvEPFvS1_iS2_EE9_M_invokeERKSt9_Any_dataOS1_OdOS2_@Base 1.0.0
  (optional=gccinternal)_ZNSt17_Function_handlerIFvPKcdPvEPFvS1_iS2_EE9_M_invokeERKSt9_Any_dataS1_dS2_@Base 1.0.0
- (optional=templinst)_ZNSt17_Function_handlerIFvPKcddPvEPS3_E9_M_invokeERKSt9_Any_dataOS1_OdSA_OS2_@Base 1.0.0
+ (optional=templinst|arch=!kfreebsd-any)_ZNSt17_Function_handlerIFvPKcddPvEPS3_E9_M_invokeERKSt9_Any_dataOS1_OdSA_OS2_@Base 1.0.0
  (optional=gccinternal)_ZNSt17_Function_handlerIFvPKcddPvEPS3_E9_M_invokeERKSt9_Any_dataS1_ddS2_@Base 1.0.0
- _ZNSt6vectorIP12V4L2_DecoderSaIS1_EE19_M_emplace_back_auxIIS1_EEEvDpOT_@Base 1.0.0
- _ZNSt6vectorIP12V4L2_DecoderSaIS1_EE19_M_emplace_back_auxIJS1_EEEvDpOT_@Base 1.0.0
- _ZNSt6vectorIP13V4L2_RecorderSaIS1_EE19_M_emplace_back_auxIIS1_EEEvDpOT_@Base 1.0.0
- _ZNSt6vectorIP13V4L2_RecorderSaIS1_EE19_M_emplace_back_auxIJS1_EEEvDpOT_@Base 1.0.0
+ (arch=!kfreebsd-any)_ZNSt6vectorIP12V4L2_DecoderSaIS1_EE19_M_emplace_back_auxIIS1_EEEvDpOT_@Base 1.0.0
+ (arch=!kfreebsd-any)_ZNSt6vectorIP12V4L2_DecoderSaIS1_EE19_M_emplace_back_auxIJS1_EEEvDpOT_@Base 1.0.0
+ (arch=!kfreebsd-any)_ZNSt6vectorIP13V4L2_RecorderSaIS1_EE19_M_emplace_back_auxIIS1_EEEvDpOT_@Base 1.0.0
+ (arch=!kfreebsd-any)_ZNSt6vectorIP13V4L2_RecorderSaIS1_EE19_M_emplace_back_auxIJS1_EEEvDpOT_@Base 1.0.0
  _ZNSt6vectorIPN4INDI8PropertyESaIS2_EE19_M_emplace_back_auxIIRKS2_EEEvDpOT_@Base 1.0.0
  _ZNSt6vectorIPN4INDI8PropertyESaIS2_EE19_M_emplace_back_auxIJRKS2_EEEvDpOT_@Base 1.0.0
- (optional=templinst)_ZNSt6vectorIPN4INDI8PropertyESaIS2_EE8_M_eraseEN9__gnu_cxx17__normal_iteratorIPS2_S4_EE@Base 1.0.0
+ (optional=templinst|arch=!kfreebsd-any)_ZNSt6vectorIPN4INDI8PropertyESaIS2_EE8_M_eraseEN9__gnu_cxx17__normal_iteratorIPS2_S4_EE@Base 1.0.0
  _ZNSt6vectorISsSaISsEE12emplace_backIISsEEEvDpOT_@Base 1.0.0
  _ZNSt6vectorISsSaISsEE12emplace_backIJSsEEEvDpOT_@Base 1.0.0
  _ZNSt6vectorISsSaISsEE19_M_emplace_back_auxIIRKSsEEEvDpOT_@Base 1.0.0
@@ -600,17 +600,17 @@ libindidriver.so.1 libindidriver1 #MINVER#
  _ZNSt6vectorISsSaISsEE19_M_emplace_back_auxIJSsEEEvDpOT_@Base 1.0.0
  _ZNSt6vectorISsSaISsEED1Ev@Base 1.0.0
  _ZNSt6vectorISsSaISsEED2Ev@Base 1.0.0
- _ZNSt6vectorIjSaIjEE19_M_emplace_back_auxIIRKjEEEvDpOT_@Base 1.0.0
- _ZNSt6vectorIjSaIjEE19_M_emplace_back_auxIJRKjEEEvDpOT_@Base 1.0.0
- _ZNSt8_Rb_treeIjSt4pairIKjPN20V4L2_Builtin_Decoder6formatEESt10_Select1stIS5_ESt4lessIjESaIS5_EE16_M_insert_uniqueIS0_IjS4_EEES0_ISt17_Rb_tree_iteratorIS5_EbEOT_@Base 1.0.0
- _ZNSt8_Rb_treeIjSt4pairIKjPN20V4L2_Builtin_Decoder6formatEESt10_Select1stIS5_ESt4lessIjESaIS5_EE24_M_get_insert_unique_posERS1_@Base 1.0.0
- _ZNSt8_Rb_treeIjSt4pairIKjPN20V4L2_Builtin_Decoder6formatEESt10_Select1stIS5_ESt4lessIjESaIS5_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS5_ERS1_@Base 1.0.0
- _ZNSt8_Rb_treeIjSt4pairIKjPN20V4L2_Builtin_Decoder6formatEESt10_Select1stIS5_ESt4lessIjESaIS5_EE8_M_eraseEPSt13_Rb_tree_nodeIS5_E@Base 1.0.0
- _ZTI12SER_Recorder@Base 1.0.0
- _ZTI12V4L2_Decoder@Base 1.0.0
- _ZTI13V4L2_Recorder@Base 1.0.0
- _ZTI20V4L2_Builtin_Decoder@Base 1.0.0
- _ZTI9V4L2_Base@Base 1.0.0
+ (arch=!kfreebsd-any)_ZNSt6vectorIjSaIjEE19_M_emplace_back_auxIIRKjEEEvDpOT_@Base 1.0.0
+ (arch=!kfreebsd-any)_ZNSt6vectorIjSaIjEE19_M_emplace_back_auxIJRKjEEEvDpOT_@Base 1.0.0
+ (arch=!kfreebsd-any)_ZNSt8_Rb_treeIjSt4pairIKjPN20V4L2_Builtin_Decoder6formatEESt10_Select1stIS5_ESt4lessIjESaIS5_EE16_M_insert_uniqueIS0_IjS4_EEES0_ISt17_Rb_tree_iteratorIS5_EbEOT_@Base 1.0.0
+ (arch=!kfreebsd-any)_ZNSt8_Rb_treeIjSt4pairIKjPN20V4L2_Builtin_Decoder6formatEESt10_Select1stIS5_ESt4lessIjESaIS5_EE24_M_get_insert_unique_posERS1_@Base 1.0.0
+ (arch=!kfreebsd-any)_ZNSt8_Rb_treeIjSt4pairIKjPN20V4L2_Builtin_Decoder6formatEESt10_Select1stIS5_ESt4lessIjESaIS5_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS5_ERS1_@Base 1.0.0
+ (arch=!kfreebsd-any)_ZNSt8_Rb_treeIjSt4pairIKjPN20V4L2_Builtin_Decoder6formatEESt10_Select1stIS5_ESt4lessIjESaIS5_EE8_M_eraseEPSt13_Rb_tree_nodeIS5_E@Base 1.0.0
+ (arch=!kfreebsd-any)_ZTI12SER_Recorder@Base 1.0.0
+ (arch=!kfreebsd-any)_ZTI12V4L2_Decoder@Base 1.0.0
+ (arch=!kfreebsd-any)_ZTI13V4L2_Recorder@Base 1.0.0
+ (arch=!kfreebsd-any)_ZTI20V4L2_Builtin_Decoder@Base 1.0.0
+ (arch=!kfreebsd-any)_ZTI9V4L2_Base@Base 1.0.0
  _ZTIFvPKc7ISStatePvE@Base 1.0.0
  _ZTIFvPKcddPvE@Base 1.0.0
  _ZTIFvPKciPvE@Base 1.0.0
@@ -630,11 +630,11 @@ libindidriver.so.1 libindidriver1 #MINVER#
  _ZTIPFvPKc7ISStatePvE@Base 1.0.0
  _ZTIPFvPKcddPvE@Base 1.0.0
  _ZTIPFvPKciPvE@Base 1.0.0
- _ZTS12SER_Recorder@Base 1.0.0
- _ZTS12V4L2_Decoder@Base 1.0.0
- _ZTS13V4L2_Recorder@Base 1.0.0
- _ZTS20V4L2_Builtin_Decoder@Base 1.0.0
- _ZTS9V4L2_Base@Base 1.0.0
+ (arch=!kfreebsd-any)_ZTS12SER_Recorder@Base 1.0.0
+ (arch=!kfreebsd-any)_ZTS12V4L2_Decoder@Base 1.0.0
+ (arch=!kfreebsd-any)_ZTS13V4L2_Recorder@Base 1.0.0
+ (arch=!kfreebsd-any)_ZTS20V4L2_Builtin_Decoder@Base 1.0.0
+ (arch=!kfreebsd-any)_ZTS9V4L2_Base@Base 1.0.0
  _ZTSFvPKc7ISStatePvE@Base 1.0.0
  _ZTSFvPKcddPvE@Base 1.0.0
  _ZTSFvPKciPvE@Base 1.0.0
@@ -654,11 +654,11 @@ libindidriver.so.1 libindidriver1 #MINVER#
  _ZTSPFvPKc7ISStatePvE@Base 1.0.0
  _ZTSPFvPKcddPvE@Base 1.0.0
  _ZTSPFvPKciPvE@Base 1.0.0
- _ZTV12SER_Recorder@Base 1.0.0
- _ZTV12V4L2_Decoder@Base 1.0.0
- _ZTV13V4L2_Recorder@Base 1.0.0
- _ZTV20V4L2_Builtin_Decoder@Base 1.0.0
- _ZTV9V4L2_Base@Base 1.0.0
+ (arch=!kfreebsd-any)_ZTV12SER_Recorder@Base 1.0.0
+ (arch=!kfreebsd-any)_ZTV12V4L2_Decoder@Base 1.0.0
+ (arch=!kfreebsd-any)_ZTV13V4L2_Recorder@Base 1.0.0
+ (arch=!kfreebsd-any)_ZTV20V4L2_Builtin_Decoder@Base 1.0.0
+ (arch=!kfreebsd-any)_ZTV9V4L2_Base@Base 1.0.0
  _ZTVN4INDI10ControllerE@Base 1.0.0
  _ZTVN4INDI11FilterWheelE@Base 1.0.0
  _ZTVN4INDI13DefaultDeviceE@Base 1.0.0
@@ -677,24 +677,24 @@ libindidriver.so.1 libindidriver1 #MINVER#
  addXMLAtt@Base 1.0.0
  addXMLEle@Base 1.0.0
  appXMLEle@Base 1.0.0
- bayer16_2_rgb24@Base 1.0.0
- bayer2rgb24@Base 1.0.0
- bayer_rggb_2rgb24@Base 1.0.0
- ccvt_420p_bgr24@Base 1.0.0
- ccvt_420p_bgr32@Base 1.0.0
- ccvt_420p_rgb24@Base 1.0.0
- ccvt_420p_rgb32@Base 1.0.0
- ccvt_bgr24_bgr32@Base 1.0.0
- ccvt_bgr24_rgb32@Base 1.0.0
- ccvt_bgr32_bgr24@Base 1.0.0
- ccvt_bgr32_rgb24@Base 1.0.0
- ccvt_rgb24_bgr32@Base 1.0.0
- ccvt_rgb24_rgb32@Base 1.0.0
- ccvt_rgb32_bgr24@Base 1.0.0
- ccvt_rgb32_rgb24@Base 1.0.0
- ccvt_yuyv_420p@Base 1.0.0
- ccvt_yuyv_bgr32@Base 1.0.0
- ccvt_yuyv_rgb32@Base 1.0.0
+ (arch=!kfreebsd-any)bayer16_2_rgb24@Base 1.0.0
+ (arch=!kfreebsd-any)bayer2rgb24@Base 1.0.0
+ (arch=!kfreebsd-any)bayer_rggb_2rgb24@Base 1.0.0
+ (arch=!kfreebsd-any)ccvt_420p_bgr24@Base 1.0.0
+ (arch=!kfreebsd-any)ccvt_420p_bgr32@Base 1.0.0
+ (arch=!kfreebsd-any)ccvt_420p_rgb24@Base 1.0.0
+ (arch=!kfreebsd-any)ccvt_420p_rgb32@Base 1.0.0
+ (arch=!kfreebsd-any)ccvt_bgr24_bgr32@Base 1.0.0
+ (arch=!kfreebsd-any)ccvt_bgr24_rgb32@Base 1.0.0
+ (arch=!kfreebsd-any)ccvt_bgr32_bgr24@Base 1.0.0
+ (arch=!kfreebsd-any)ccvt_bgr32_rgb24@Base 1.0.0
+ (arch=!kfreebsd-any)ccvt_rgb24_bgr32@Base 1.0.0
+ (arch=!kfreebsd-any)ccvt_rgb24_rgb32@Base 1.0.0
+ (arch=!kfreebsd-any)ccvt_rgb32_bgr24@Base 1.0.0
+ (arch=!kfreebsd-any)ccvt_rgb32_rgb24@Base 1.0.0
+ (arch=!kfreebsd-any)ccvt_yuyv_420p@Base 1.0.0
+ (arch=!kfreebsd-any)ccvt_yuyv_bgr32@Base 1.0.0
+ (arch=!kfreebsd-any)ccvt_yuyv_rgb32@Base 1.0.0
  clientMsgCB@Base 1.0.0
  clixml@Base 1.0.0
  cloneXMLEle@Base 1.0.0
@@ -703,8 +703,8 @@ libindidriver.so.1 libindidriver1 #MINVER#
  crackIPerm@Base 1.0.0
  crackISRule@Base 1.0.0
  crackISState@Base 1.0.0
- decode_jpeg_gray_raw@Base 1.0.0
- decode_jpeg_raw@Base 1.0.0
+ (arch=!kfreebsd-any)decode_jpeg_gray_raw@Base 1.0.0
+ (arch=!kfreebsd-any)decode_jpeg_raw@Base 1.0.0
  deferLoop0@Base 1.0.0
  deferLoop@Base 1.0.0
  delLilXML@Base 1.0.0
@@ -712,7 +712,7 @@ libindidriver.so.1 libindidriver1 #MINVER#
  dispatch@Base 1.0.0
  editXMLAtt@Base 1.0.0
  editXMLEle@Base 1.0.0
- encode_jpeg_raw@Base 1.0.0
+ (arch=!kfreebsd-any)encode_jpeg_raw@Base 1.0.0
  entityXML@Base 1.0.0
  escapeXML@Base 1.0.0
  eventLoop@Base 1.0.0
@@ -728,7 +728,7 @@ libindidriver.so.1 libindidriver1 #MINVER#
  lilxmlMalloc@Base 1.0.0
  main@Base 1.0.0
  me@Base 1.0.0
- mjpegtoyuv420p@Base 1.0.0
+ (arch=!kfreebsd-any)mjpegtoyuv420p@Base 1.0.0
  nXMLAtt@Base 1.0.0
  nXMLEle@Base 1.0.0
  nameXMLAtt@Base 1.0.0

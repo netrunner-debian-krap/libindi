@@ -5,6 +5,7 @@ libindi (1.0.0-1~) UNRELEASED; urgency=medium
   * New upstream release (1.0.0).
   * Follow upstream soversion bump. (Closes: #791746)
   * Update copyright information.
+  * Update symbols with kfreebsd builds.
 
   [ Adrien Grellier ]
   * depends on libcfitsio-dev instead of libcfitsio3-dev
