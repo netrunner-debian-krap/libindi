@@ -1,4 +1,4 @@
-libindi (1.0.0-1~) UNRELEASED; urgency=medium
+libindi (1.0.0-1~1) UNRELEASED; urgency=medium
 
   [ Maximiliano Curia ]
   * New upstream release (0.9.9).
@@ -15,7 +15,7 @@ libindi (1.0.0-1~) UNRELEASED; urgency=medium
   * depends on libcfitsio-dev instead of libcfitsio3-dev
     (Closes: #761723)
 
- -- Maximiliano Curia <maxy@debian.org>  Wed, 08 Jul 2015 12:57:03 +0200
+ -- Maximiliano Curia <maxy@debian.org>  Sat, 08 Aug 2015 11:46:08 +0200
 
 libindi (0.9.8.1-5.1) unstable; urgency=medium
 
