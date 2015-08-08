@@ -13,7 +13,7 @@ Build-Depends: cmake (>= 2.4.7),
                pkg-config,
                pkg-kde-tools (>= 0.12),
                zlib1g-dev
-Standards-Version: 3.9.5
+Standards-Version: 3.9.6
 Homepage: http://www.indilib.org/
 Vcs-Git: git://anonscm.debian.org/pkg-kde/krap/libindi.git
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/krap/libindi.git

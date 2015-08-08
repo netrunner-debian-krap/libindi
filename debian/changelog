@@ -10,6 +10,7 @@ libindi (1.0.0-1~1) UNRELEASED; urgency=medium
   * Remove patch: no-sys-io.patch
   * Remove patch: abi.diff
   * Update symbols files.
+  * Bump Standards-Version to 3.9.6, no changes needed.
 
   [ Adrien Grellier ]
   * depends on libcfitsio-dev instead of libcfitsio3-dev
