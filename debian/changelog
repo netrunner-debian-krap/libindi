@@ -9,6 +9,7 @@ libindi (1.0.0-1~) UNRELEASED; urgency=medium
   * Update patch for freebsd_support for usb support.
   * Remove patch: no-sys-io.patch
   * Remove patch: abi.diff
+  * Update symbols files.
 
   [ Adrien Grellier ]
   * depends on libcfitsio-dev instead of libcfitsio3-dev
