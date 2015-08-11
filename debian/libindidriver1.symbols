@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 1.0.0 amd64 kfreebsd-amd64 kfreebsd-i386
+# SymbolsHelper-Confirmed: 1.0.0 amd64 arm64 armel armhf i386 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc ppc64 s390x sh4
 libindidriver.so.1 libindidriver1 #MINVER#
  ALIGNMENT_TAB@Base 1.0.0
  COMMUNICATION_TAB@Base 1.0.0
@@ -147,12 +147,15 @@ libindidriver.so.1 libindidriver1 #MINVER#
  (arch=!kfreebsd-any)_ZN20V4L2_Builtin_DecoderD0Ev@Base 1.0.0
  (arch=!kfreebsd-any)_ZN20V4L2_Builtin_DecoderD1Ev@Base 1.0.0
  (arch=!kfreebsd-any)_ZN20V4L2_Builtin_DecoderD2Ev@Base 1.0.0
- _ZN4INDI10BaseDevice10addMessageENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE@Base 1.0.0
+ (arch=!arm64 !sh4)_ZN4INDI10BaseDevice10addMessageENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE@Base 1.0.0
+ (arch=arm64 sh4)_ZN4INDI10BaseDevice10addMessageESs@Base 1.0.0
  _ZN4INDI10BaseDevice11getPropertyEPKc9INDI_TYPE@Base 1.0.0
  _ZN4INDI10BaseDevice11isConnectedEv@Base 1.0.0
- _ZN4INDI10BaseDevice11lastMessageB5cxx11Ev@Base 1.0.0
+ (arch=!arm64 !sh4)_ZN4INDI10BaseDevice11lastMessageB5cxx11Ev@Base 1.0.0
+ (arch=arm64 sh4)_ZN4INDI10BaseDevice11lastMessageEv@Base 1.0.0
  _ZN4INDI10BaseDevice12checkMessageEP8_xml_ele@Base 1.0.0
- _ZN4INDI10BaseDevice12messageQueueB5cxx11Ei@Base 1.0.0
+ (arch=!arm64 !sh4)_ZN4INDI10BaseDevice12messageQueueB5cxx11Ei@Base 1.0.0
+ (arch=arm64 sh4)_ZN4INDI10BaseDevice12messageQueueEi@Base 1.0.0
  _ZN4INDI10BaseDevice13buildSkeletonEPKc@Base 1.0.0
  _ZN4INDI10BaseDevice13getDeviceNameEv@Base 1.0.0
  _ZN4INDI10BaseDevice13getDriverExecEv@Base 1.0.0
@@ -332,7 +335,8 @@ libindidriver.so.1 libindidriver1 #MINVER#
  _ZN4INDI3CCD16SetCCDCapabilityEPNS0_13CCDCapabilityE@Base 1.0.0
  _ZN4INDI3CCD16updatePropertiesEv@Base 1.0.0
  _ZN4INDI3CCD17UpdateGuiderFrameEiiii@Base 1.0.0
- _ZN4INDI3CCD17fits_update_key_sEP8fitsfileiNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPvS8_Pi@Base 1.0.0
+ (arch=!arm64 !sh4)_ZN4INDI3CCD17fits_update_key_sEP8fitsfileiNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPvS8_Pi@Base 1.0.0
+ (arch=arm64 sh4)_ZN4INDI3CCD17fits_update_key_sEP8fitsfileiSsPvSsPi@Base 1.0.0
  _ZN4INDI3CCD18AbortGuideExposureEv@Base 1.0.0
  _ZN4INDI3CCD18StartGuideExposureEf@Base 1.0.0
  _ZN4INDI3CCD18UpdateCCDFrameTypeEN7CCDChip9CCD_FRAMEE@Base 1.0.0
@@ -393,9 +397,12 @@ libindidriver.so.1 libindidriver1 #MINVER#
  _ZN4INDI6Logger2m_E@Base 1.0.0
  _ZN4INDI6Logger4TagsE@Base 1.0.0
  _ZN4INDI6Logger4rankEj@Base 1.0.0
- _ZN4INDI6Logger5printEPKcjRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEiS2_z@Base 1.0.0
- _ZN4INDI6Logger8logFile_B5cxx11E@Base 1.0.0
- _ZN4INDI6Logger9configureERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEENS0_11loggerConf_Eii@Base 1.0.0
+ (arch=!arm64 !sh4)_ZN4INDI6Logger5printEPKcjRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEiS2_z@Base 1.0.0
+ (arch=arm64 sh4)_ZN4INDI6Logger5printEPKcjRKSsiS2_z@Base 1.0.0
+ (arch=!arm64 !sh4)_ZN4INDI6Logger8logFile_B5cxx11E@Base 1.0.0
+ (arch=arm64 sh4)_ZN4INDI6Logger8logFile_E@Base 1.0.0
+ (arch=!arm64 !sh4)_ZN4INDI6Logger9configureERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEENS0_11loggerConf_Eii@Base 1.0.0
+ (arch=arm64 sh4)_ZN4INDI6Logger9configureERKSsNS0_11loggerConf_Eii@Base 1.0.0
  _ZN4INDI6LoggerC1Ev@Base 1.0.0
  _ZN4INDI6LoggerC2Ev@Base 1.0.0
  _ZN4INDI6LoggerD1Ev@Base 1.0.0
@@ -577,30 +584,44 @@ libindidriver.so.1 libindidriver1 #MINVER#
  _ZNSt14_Function_base13_Base_managerIPFvPKc7ISStatePvEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation@Base 1.0.0
  _ZNSt14_Function_base13_Base_managerIPFvPKcddPvEE10_M_managerERSt9_Any_dataRKS7_St18_Manager_operation@Base 1.0.0
  _ZNSt14_Function_base13_Base_managerIPFvPKciPvEE10_M_managerERSt9_Any_dataRKS7_St18_Manager_operation@Base 1.0.0
- (optional=templinst)_ZNSt17_Function_handlerIFvPKc7ISStatePvEPFvS1_iS3_EE9_M_invokeERKSt9_Any_dataOS1_OS2_OS3_@Base 1.0.0
- (optional=templinst)_ZNSt17_Function_handlerIFvPKc7ISStatePvEPS4_E9_M_invokeERKSt9_Any_dataOS1_OS2_OS3_@Base 1.0.0
- (optional=templinst)_ZNSt17_Function_handlerIFvPKcdPvEPFvS1_iS2_EE9_M_invokeERKSt9_Any_dataOS1_OdOS2_@Base 1.0.0
- (optional=templinst)_ZNSt17_Function_handlerIFvPKcddPvEPS3_E9_M_invokeERKSt9_Any_dataOS1_OdSA_OS2_@Base 1.0.0
- (optional=templinst)_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE12emplace_backIIS5_EEEvDpOT_@Base 1.0.0
- (optional=templinst)_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE12emplace_backIJS5_EEEvDpOT_@Base 1.0.0
- (optional=templinst)_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE19_M_emplace_back_auxIIRKS5_EEEvDpOT_@Base 1.0.0
- (optional=templinst)_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE19_M_emplace_back_auxIIS5_EEEvDpOT_@Base 1.0.0
- (optional=templinst)_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE19_M_emplace_back_auxIJRKS5_EEEvDpOT_@Base 1.0.0
- (optional=templinst)_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE19_M_emplace_back_auxIJS5_EEEvDpOT_@Base 1.0.0
- (optional=templinst)_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EED1Ev@Base 1.0.0
- (optional=templinst)_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EED2Ev@Base 1.0.0
+ (optional=templinst|arch=!arm64 !sh4)_ZNSt17_Function_handlerIFvPKc7ISStatePvEPFvS1_iS3_EE9_M_invokeERKSt9_Any_dataOS1_OS2_OS3_@Base 1.0.0
+ (optional=templinst|arch=arm64 sh4)_ZNSt17_Function_handlerIFvPKc7ISStatePvEPFvS1_iS3_EE9_M_invokeERKSt9_Any_dataS1_S2_S3_@Base 1.0.0
+ (optional=templinst|arch=!arm64 !sh4)_ZNSt17_Function_handlerIFvPKc7ISStatePvEPS4_E9_M_invokeERKSt9_Any_dataOS1_OS2_OS3_@Base 1.0.0
+ (optional=templinst|arch=arm64 sh4)_ZNSt17_Function_handlerIFvPKc7ISStatePvEPS4_E9_M_invokeERKSt9_Any_dataS1_S2_S3_@Base 1.0.0
+ (optional=templinst|arch=!arm64 !sh4)_ZNSt17_Function_handlerIFvPKcdPvEPFvS1_iS2_EE9_M_invokeERKSt9_Any_dataOS1_OdOS2_@Base 1.0.0
+ (optional=templinst|arch=arm64 sh4)_ZNSt17_Function_handlerIFvPKcdPvEPFvS1_iS2_EE9_M_invokeERKSt9_Any_dataS1_dS2_@Base 1.0.0
+ (optional=templinst|arch=!arm64 !sh4)_ZNSt17_Function_handlerIFvPKcddPvEPS3_E9_M_invokeERKSt9_Any_dataOS1_OdSA_OS2_@Base 1.0.0
+ (optional=templinst|arch=arm64 sh4)_ZNSt17_Function_handlerIFvPKcddPvEPS3_E9_M_invokeERKSt9_Any_dataS1_ddS2_@Base 1.0.0
+ (optional=templinst|arch=!arm64 !sh4)_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE12emplace_backIIS5_EEEvDpOT_@Base 1.0.0
+ (optional=templinst|arch=!arm64 !sh4)_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE12emplace_backIJS5_EEEvDpOT_@Base 1.0.0
+ (optional=templinst|arch=!arm64 !sh4)_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE19_M_emplace_back_auxIIRKS5_EEEvDpOT_@Base 1.0.0
+ (optional=templinst|arch=!arm64 !sh4)_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE19_M_emplace_back_auxIIS5_EEEvDpOT_@Base 1.0.0
+ (optional=templinst|arch=!arm64 !sh4)_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE19_M_emplace_back_auxIJRKS5_EEEvDpOT_@Base 1.0.0
+ (optional=templinst|arch=!arm64 !sh4)_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE19_M_emplace_back_auxIJS5_EEEvDpOT_@Base 1.0.0
+ (optional=templinst|arch=!arm64 !sh4)_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EED1Ev@Base 1.0.0
+ (optional=templinst|arch=!arm64 !sh4)_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EED2Ev@Base 1.0.0
  (arch=!kfreebsd-any)_ZNSt6vectorIP12V4L2_DecoderSaIS1_EE19_M_emplace_back_auxIIS1_EEEvDpOT_@Base 1.0.0
  (arch=!kfreebsd-any)_ZNSt6vectorIP12V4L2_DecoderSaIS1_EE19_M_emplace_back_auxIJS1_EEEvDpOT_@Base 1.0.0
  (arch=!kfreebsd-any)_ZNSt6vectorIP13V4L2_RecorderSaIS1_EE19_M_emplace_back_auxIIS1_EEEvDpOT_@Base 1.0.0
  (arch=!kfreebsd-any)_ZNSt6vectorIP13V4L2_RecorderSaIS1_EE19_M_emplace_back_auxIJS1_EEEvDpOT_@Base 1.0.0
  _ZNSt6vectorIPN4INDI8PropertyESaIS2_EE19_M_emplace_back_auxIIRKS2_EEEvDpOT_@Base 1.0.0
  _ZNSt6vectorIPN4INDI8PropertyESaIS2_EE19_M_emplace_back_auxIJRKS2_EEEvDpOT_@Base 1.0.0
- (optional=templinst)_ZNSt6vectorIPN4INDI8PropertyESaIS2_EE8_M_eraseEN9__gnu_cxx17__normal_iteratorIPS2_S4_EE@Base 1.0.0
+ (optional=templinst|arch=!arm64 !sh4)_ZNSt6vectorIPN4INDI8PropertyESaIS2_EE8_M_eraseEN9__gnu_cxx17__normal_iteratorIPS2_S4_EE@Base 1.0.0
+ (optional=templinst|arch=arm64 sh4)_ZNSt6vectorISsSaISsEE12emplace_backIISsEEEvDpOT_@Base 1.0.0
+ (optional=templinst|arch=arm64 sh4)_ZNSt6vectorISsSaISsEE12emplace_backIJSsEEEvDpOT_@Base 1.0.0
+ (optional=templinst|arch=arm64 sh4)_ZNSt6vectorISsSaISsEE19_M_emplace_back_auxIIRKSsEEEvDpOT_@Base 1.0.0
+ (optional=templinst|arch=arm64 sh4)_ZNSt6vectorISsSaISsEE19_M_emplace_back_auxIISsEEEvDpOT_@Base 1.0.0
+ (optional=templinst|arch=arm64 sh4)_ZNSt6vectorISsSaISsEE19_M_emplace_back_auxIJRKSsEEEvDpOT_@Base 1.0.0
+ (optional=templinst|arch=arm64 sh4)_ZNSt6vectorISsSaISsEE19_M_emplace_back_auxIJSsEEEvDpOT_@Base 1.0.0
+ (optional=templinst|arch=arm64 sh4)_ZNSt6vectorISsSaISsEED1Ev@Base 1.0.0
+ (optional=templinst|arch=arm64 sh4)_ZNSt6vectorISsSaISsEED2Ev@Base 1.0.0
  (arch=!kfreebsd-any)_ZNSt6vectorIjSaIjEE19_M_emplace_back_auxIIRKjEEEvDpOT_@Base 1.0.0
  (arch=!kfreebsd-any)_ZNSt6vectorIjSaIjEE19_M_emplace_back_auxIJRKjEEEvDpOT_@Base 1.0.0
  (arch=!kfreebsd-any)_ZNSt8_Rb_treeIjSt4pairIKjPN20V4L2_Builtin_Decoder6formatEESt10_Select1stIS5_ESt4lessIjESaIS5_EE16_M_insert_uniqueIS0_IjS4_EEES0_ISt17_Rb_tree_iteratorIS5_EbEOT_@Base 1.0.0
+ (optional=templinst|arch=!amd64 !arm64 !kfreebsd-amd64 !kfreebsd-i386 !sh4)_ZNSt8_Rb_treeIjSt4pairIKjPN20V4L2_Builtin_Decoder6formatEESt10_Select1stIS5_ESt4lessIjESaIS5_EE22_M_emplace_hint_uniqueIIRKSt21piecewise_construct_tSt5tupleIIRS1_EESG_IIEEEEESt17_Rb_tree_iteratorIS5_ESt23_Rb_tree_const_iteratorIS5_EDpOT_@Base 1.0.0
+ (optional=templinst|arch=!amd64 !arm64 !kfreebsd-amd64 !kfreebsd-i386 !sh4)_ZNSt8_Rb_treeIjSt4pairIKjPN20V4L2_Builtin_Decoder6formatEESt10_Select1stIS5_ESt4lessIjESaIS5_EE22_M_emplace_hint_uniqueIJRKSt21piecewise_construct_tSt5tupleIJRS1_EESG_IJEEEEESt17_Rb_tree_iteratorIS5_ESt23_Rb_tree_const_iteratorIS5_EDpOT_@Base 1.0.0
  (arch=!kfreebsd-any)_ZNSt8_Rb_treeIjSt4pairIKjPN20V4L2_Builtin_Decoder6formatEESt10_Select1stIS5_ESt4lessIjESaIS5_EE24_M_get_insert_unique_posERS1_@Base 1.0.0
- (arch=!kfreebsd-any)_ZNSt8_Rb_treeIjSt4pairIKjPN20V4L2_Builtin_Decoder6formatEESt10_Select1stIS5_ESt4lessIjESaIS5_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS5_ERS1_@Base 1.0.0
+ (arch=!armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-any !kfreebsd-i386 !mips !mipsel !powerpc !ppc64 !s390x)_ZNSt8_Rb_treeIjSt4pairIKjPN20V4L2_Builtin_Decoder6formatEESt10_Select1stIS5_ESt4lessIjESaIS5_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS5_ERS1_@Base 1.0.0
  (arch=!kfreebsd-any)_ZNSt8_Rb_treeIjSt4pairIKjPN20V4L2_Builtin_Decoder6formatEESt10_Select1stIS5_ESt4lessIjESaIS5_EE8_M_eraseEPSt13_Rb_tree_nodeIS5_E@Base 1.0.0
  (arch=!kfreebsd-any)_ZTI12SER_Recorder@Base 1.0.0
  (arch=!kfreebsd-any)_ZTI12V4L2_Decoder@Base 1.0.0
