@@ -1,9 +1,9 @@
-libindi (1.0.0-2~) UNRELEASED; urgency=medium
+libindi (1.0.0-2) unstable; urgency=medium
 
   * Update symbols from 1.0.0-1 buildlogs
   * Update symbols files. (Closes: #795143)
 
- -- Maximiliano Curia <maxy@debian.org>  Tue, 11 Aug 2015 07:13:45 +0200
+ -- Maximiliano Curia <maxy@debian.org>  Tue, 11 Aug 2015 08:24:15 +0200
 
 libindi (1.0.0-1) unstable; urgency=medium
 
