@@ -1,10 +1,10 @@
-libindi (1.0.0-4) UNRELEASED; urgency=medium
+libindi (1.0.0-4) unstable; urgency=medium
 
   [ Bas Couwenberg ]
   * Update build dependencies for GSL 2, change libgsl0-dev to libgsl-dev.
     (Closes: #806834)
 
- -- Bas Couwenberg <sebastic@debian.org>  Sun, 22 Nov 2015 18:13:52 +0100
+ -- Maximiliano Curia <maxy@debian.org>  Wed, 02 Dec 2015 11:09:08 +0100
 
 libindi (1.0.0-3) unstable; urgency=medium
 
