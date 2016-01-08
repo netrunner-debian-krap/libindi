@@ -1,1 +1,2 @@
 lib/udev/rules.d/99-gpusb.rules
+lib/udev/rules.d/99-perfectstar.rules
