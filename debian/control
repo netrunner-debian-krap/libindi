@@ -3,10 +3,12 @@ Section: misc
 Priority: optional
 Maintainer: Debian Krap Maintainers <debian-qt-kde@lists.debian.org>
 Uploaders: Pino Toscano <pino@debian.org>, Maximiliano Curia <maxy@debian.org>
-Build-Depends: cmake (>= 2.4.7),
+Build-Depends: cmake (>= 2.6~),
                debhelper (>= 9),
                libcfitsio-dev,
+               libcurl4-gnutls-dev,
                libgsl-dev,
+               libgsl0-dev,
                libjpeg-dev,
                libnova-dev (>= 0.14.0),
                libusb-1.0-0-dev,
@@ -21,7 +23,9 @@ Vcs-Browser: http://anonscm.debian.org/cgit/pkg-kde/krap/libindi.git
 Package: libindi1
 Section: libs
 Architecture: any
-Depends: libindi-data (>= ${source:Version}), ${misc:Depends}, ${shlibs:Depends}
+Depends: libindi-data (>= ${source:Version}),
+         ${misc:Depends},
+         ${shlibs:Depends}
 Suggests: indi-bin (>= ${source:Version})
 Pre-Depends: ${misc:Pre-Depends}
 Multi-Arch: same
@@ -37,7 +41,9 @@ Description: Instrument-Neutral Device Interface library -- client library
 Package: libindidriver1
 Section: libs
 Architecture: any
-Depends: libindi-data (>= ${source:Version}), ${misc:Depends}, ${shlibs:Depends}
+Depends: libindi-data (>= ${source:Version}),
+         ${misc:Depends},
+         ${shlibs:Depends}
 Pre-Depends: ${misc:Pre-Depends}
 Multi-Arch: same
 Description: Instrument-Neutral Device Interface library -- driver library
@@ -52,7 +58,9 @@ Description: Instrument-Neutral Device Interface library -- driver library
 Package: libindimain1
 Section: libs
 Architecture: any
-Depends: libindi-data (>= ${source:Version}), ${misc:Depends}, ${shlibs:Depends}
+Depends: libindi-data (>= ${source:Version}),
+         ${misc:Depends},
+         ${shlibs:Depends}
 Pre-Depends: ${misc:Pre-Depends}
 Multi-Arch: same
 Description: Instrument-Neutral Device Interface library -- main library
@@ -67,7 +75,9 @@ Description: Instrument-Neutral Device Interface library -- main library
 Package: libindialignmentdriver1
 Section: libs
 Architecture: any
-Depends: libindi-plugins (= ${binary:Version}), ${misc:Depends}, ${shlibs:Depends}
+Depends: libindi-plugins (= ${binary:Version}),
+         ${misc:Depends},
+         ${shlibs:Depends}
 Pre-Depends: ${misc:Pre-Depends}
 Multi-Arch: same
 Description: Instrument-Neutral Device Interface library -- alignment driver lib
@@ -99,9 +109,9 @@ Section: libdevel
 Architecture: any
 Depends: libcfitsio3-dev,
          libindi1 (= ${binary:Version}),
+         libindialignmentdriver1 (= ${binary:Version}),
          libindidriver1 (= ${binary:Version}),
          libindimain1 (= ${binary:Version}),
-         libindialignmentdriver1 (= ${binary:Version}),
          libusb-1.0-0-dev,
          ${misc:Depends}
 Description: Instrument-Neutral Device Interface library -- development files
@@ -128,7 +138,9 @@ Description: Instrument-Neutral Device Interface library -- shared data
 
 Package: indi-bin
 Architecture: any
-Depends: libindi-data (>= ${source:Version}), ${misc:Depends}, ${shlibs:Depends}
+Depends: libindi-data (>= ${source:Version}),
+         ${misc:Depends},
+         ${shlibs:Depends}
 Description: INDI server, drivers and tools
  INDI (Instrument-Neutral Device Interface) is a distributed XML-based
  control protocol designed to operate astronomical instrumentation.
