@@ -55,23 +55,6 @@ Description: Instrument-Neutral Device Interface library -- driver library
  .
  This package contains the driver shared library.
 
-Package: libindimain1
-Section: libs
-Architecture: any
-Depends: libindi-data (>= ${source:Version}),
-         ${misc:Depends},
-         ${shlibs:Depends}
-Pre-Depends: ${misc:Pre-Depends}
-Multi-Arch: same
-Description: Instrument-Neutral Device Interface library -- main library
- INDI (Instrument-Neutral Device Interface) is a distributed XML-based
- control protocol designed to operate astronomical instrumentation.
- INDI is small, flexible, easy to parse, scalable, and stateless.
- It supports common DCS functions such as remote control, data acquisition,
- monitoring, and a lot more.
- .
- This package contains the main shared library.
-
 Package: libindialignmentdriver1
 Section: libs
 Architecture: any
@@ -111,7 +94,6 @@ Depends: libcfitsio3-dev,
          libindi1 (= ${binary:Version}),
          libindialignmentdriver1 (= ${binary:Version}),
          libindidriver1 (= ${binary:Version}),
-         libindimain1 (= ${binary:Version}),
          libusb-1.0-0-dev,
          ${misc:Depends}
 Description: Instrument-Neutral Device Interface library -- development files
