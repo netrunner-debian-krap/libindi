@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 1.0.0 amd64 arm64 armel armhf hppa i386 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc ppc64 ppc64el s390x sh4 x32
+# SymbolsHelper-Confirmed: 1.1.0 amd64
 libindidriver.so.1 libindidriver1 #MINVER#
  ALIGNMENT_TAB@Base 1.0.0
  COMMUNICATION_TAB@Base 1.0.0
@@ -79,6 +79,7 @@ libindidriver.so.1 libindidriver1 #MINVER#
  RAPIDGUIDE_TAB@Base 1.0.0
  (arch=!kfreebsd-any)RGB2YUV@Base 1.0.0
  SITE_TAB@Base 1.0.0
+ WCS_TAB@Base 1.1.0
  _Z9timerfuncPv@Base 1.0.0
  (arch=!kfreebsd-any)_ZN11V4L2_Decode10getDecoderEv@Base 1.0.0
  (arch=!kfreebsd-any)_ZN11V4L2_Decode10setDecoderEP12V4L2_Decoder@Base 1.0.0
@@ -127,10 +128,14 @@ libindidriver.so.1 libindidriver1 #MINVER#
  (arch=!kfreebsd-any)_ZN13V4L2_RecorderD0Ev@Base 1.0.0
  (arch=!kfreebsd-any)_ZN13V4L2_RecorderD1Ev@Base 1.0.0
  (arch=!kfreebsd-any)_ZN13V4L2_RecorderD2Ev@Base 1.0.0
+ _ZN20V4L2_Builtin_Decoder10getLinearYEv@Base 1.1.0
+ _ZN20V4L2_Builtin_Decoder11makeLinearYEv@Base 1.1.0
  (arch=!kfreebsd-any)_ZN20V4L2_Builtin_Decoder11usesoftcropEb@Base 1.0.0
  (arch=!kfreebsd-any)_ZN20V4L2_Builtin_Decoder12allocBuffersEv@Base 1.0.0
  (arch=!kfreebsd-any)_ZN20V4L2_Builtin_Decoder12getRGBBufferEv@Base 1.0.0
  (arch=!kfreebsd-any)_ZN20V4L2_Builtin_Decoder14getColorBufferEv@Base 1.0.0
+ _ZN20V4L2_Builtin_Decoder15setQuantizationEb@Base 1.1.0
+ _ZN20V4L2_Builtin_Decoder16setLinearizationEb@Base 1.1.0
  (arch=!kfreebsd-any)_ZN20V4L2_Builtin_Decoder17issupportedformatEj@Base 1.0.0
  (arch=!kfreebsd-any)_ZN20V4L2_Builtin_Decoder19getsupportedformatsEv@Base 1.0.0
  (arch=!kfreebsd-any)_ZN20V4L2_Builtin_Decoder22init_supported_formatsEv@Base 1.0.0
@@ -138,10 +143,12 @@ libindidriver.so.1 libindidriver1 #MINVER#
  (arch=!kfreebsd-any)_ZN20V4L2_Builtin_Decoder4getVEv@Base 1.0.0
  (arch=!kfreebsd-any)_ZN20V4L2_Builtin_Decoder4getYEv@Base 1.0.0
  (arch=!kfreebsd-any)_ZN20V4L2_Builtin_Decoder4initEv@Base 1.0.0
+ _ZN20V4L2_Builtin_Decoder5makeYEv@Base 1.1.0
  (arch=!kfreebsd-any)_ZN20V4L2_Builtin_Decoder6decodeEPhP11v4l2_buffer@Base 1.0.0
+ _ZN20V4L2_Builtin_Decoder6getBppEv@Base 1.1.0
  (arch=!kfreebsd-any)_ZN20V4L2_Builtin_Decoder7setcropE9v4l2_crop@Base 1.0.0
  (arch=!kfreebsd-any)_ZN20V4L2_Builtin_Decoder9resetcropEv@Base 1.0.0
- (arch=!kfreebsd-any)_ZN20V4L2_Builtin_Decoder9setformatE11v4l2_format@Base 1.0.0
+ _ZN20V4L2_Builtin_Decoder9setformatE11v4l2_formatb@Base 1.1.0
  (arch=!kfreebsd-any)_ZN20V4L2_Builtin_DecoderC1Ev@Base 1.0.0
  (arch=!kfreebsd-any)_ZN20V4L2_Builtin_DecoderC2Ev@Base 1.0.0
  (arch=!kfreebsd-any)_ZN20V4L2_Builtin_DecoderD0Ev@Base 1.0.0
@@ -149,7 +156,7 @@ libindidriver.so.1 libindidriver1 #MINVER#
  (arch=!kfreebsd-any)_ZN20V4L2_Builtin_DecoderD2Ev@Base 1.0.0
  (arch=!sh4)_ZN4INDI10BaseDevice10addMessageENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE@Base 1.0.0
  (arch=sh4)_ZN4INDI10BaseDevice10addMessageESs@Base 1.0.0
- _ZN4INDI10BaseDevice11getPropertyEPKc9INDI_TYPE@Base 1.0.0
+ _ZN4INDI10BaseDevice11getPropertyEPKc18INDI_PROPERTY_TYPE@Base 1.1.0
  _ZN4INDI10BaseDevice11isConnectedEv@Base 1.0.0
  (arch=!sh4)_ZN4INDI10BaseDevice11lastMessageB5cxx11Ev@Base 1.0.0
  (arch=sh4)_ZN4INDI10BaseDevice11lastMessageEv@Base 1.0.0
@@ -161,11 +168,11 @@ libindidriver.so.1 libindidriver1 #MINVER#
  _ZN4INDI10BaseDevice13getDriverExecEv@Base 1.0.0
  _ZN4INDI10BaseDevice13getDriverNameEv@Base 1.0.0
  _ZN4INDI10BaseDevice13setDeviceNameEPKc@Base 1.0.0
- _ZN4INDI10BaseDevice14getRawPropertyEPKc9INDI_TYPE@Base 1.0.0
+ _ZN4INDI10BaseDevice14getRawPropertyEPKc18INDI_PROPERTY_TYPE@Base 1.1.0
  _ZN4INDI10BaseDevice14removePropertyEPKcPc@Base 1.0.0
  _ZN4INDI10BaseDevice16getDriverVersionEv@Base 1.0.0
  _ZN4INDI10BaseDevice16getPropertyStateEPKc@Base 1.0.0
- _ZN4INDI10BaseDevice16registerPropertyEPv9INDI_TYPE@Base 1.0.0
+ _ZN4INDI10BaseDevice16registerPropertyEPv18INDI_PROPERTY_TYPE@Base 1.1.0
  _ZN4INDI10BaseDevice18getDriverInterfaceEv@Base 1.0.0
  _ZN4INDI10BaseDevice21getPropertyPermissionEPKc@Base 1.0.0
  _ZN4INDI10BaseDevice7getBLOBEPKc@Base 1.0.0
@@ -266,19 +273,32 @@ libindidriver.so.1 libindidriver1 #MINVER#
  _ZN4INDI13DefaultDeviceD0Ev@Base 1.0.0
  _ZN4INDI13DefaultDeviceD1Ev@Base 1.0.0
  _ZN4INDI13DefaultDeviceD2Ev@Base 1.0.0
- _ZN4INDI13DomeInterface11MoveAbsDomeEd@Base 1.0.0
- _ZN4INDI13DomeInterface11MoveRelDomeENS0_13DomeDirectionEd@Base 1.0.0
- _ZN4INDI13DomeInterface12SetDomeSpeedEd@Base 1.0.0
+ _ZN4INDI13DomeInterface12GetAxis1ParkEv@Base 1.1.0
+ _ZN4INDI13DomeInterface12LoadParkDataEv@Base 1.1.0
+ _ZN4INDI13DomeInterface12SetAxis1ParkEd@Base 1.1.0
+ _ZN4INDI13DomeInterface13WriteParkDataEv@Base 1.1.0
+ _ZN4INDI13DomeInterface14ControlShutterENS0_16ShutterOperationE@Base 1.1.0
+ _ZN4INDI13DomeInterface14SetCurrentParkEv@Base 1.1.0
+ _ZN4INDI13DomeInterface14SetDefaultParkEv@Base 1.1.0
+ _ZN4INDI13DomeInterface15SetParkDataTypeENS0_12DomeParkDataE@Base 1.1.0
  _ZN4INDI13DomeInterface17SetDomeCapabilityEPNS0_14DomeCapabilityE@Base 1.0.0
  _ZN4INDI13DomeInterface17processDomeNumberEPKcS2_PdPPci@Base 1.0.0
  _ZN4INDI13DomeInterface17processDomeSwitchEPKcS2_P7ISStatePPci@Base 1.0.0
- _ZN4INDI13DomeInterface18ControlDomeShutterENS0_16ShutterOperationE@Base 1.0.0
  _ZN4INDI13DomeInterface18initDomePropertiesEPKcS2_@Base 1.0.0
+ _ZN4INDI13DomeInterface19GetAxis1ParkDefaultEv@Base 1.1.0
+ _ZN4INDI13DomeInterface19SetAxis1ParkDefaultEd@Base 1.1.0
  _ZN4INDI13DomeInterface22GetShutterStatusStringENS0_13ShutterStatusE@Base 1.0.0
- _ZN4INDI13DomeInterface8HomeDomeEv@Base 1.0.0
- _ZN4INDI13DomeInterface8MoveDomeENS0_13DomeDirectionEdi@Base 1.0.0
- _ZN4INDI13DomeInterface8ParkDomeEv@Base 1.0.0
- _ZN4INDI13DomeInterface9AbortDomeEv@Base 1.0.0
+ _ZN4INDI13DomeInterface4HomeEv@Base 1.1.0
+ _ZN4INDI13DomeInterface4MoveENS0_13DomeDirectionENS0_17DomeMotionCommandE@Base 1.1.0
+ _ZN4INDI13DomeInterface4ParkEv@Base 1.1.0
+ _ZN4INDI13DomeInterface5AbortEv@Base 1.1.0
+ _ZN4INDI13DomeInterface6UnParkEv@Base 1.1.0
+ _ZN4INDI13DomeInterface7MoveAbsEd@Base 1.1.0
+ _ZN4INDI13DomeInterface7MoveRelEd@Base 1.1.0
+ _ZN4INDI13DomeInterface8InitParkEv@Base 1.1.0
+ _ZN4INDI13DomeInterface8SetSpeedEd@Base 1.1.0
+ _ZN4INDI13DomeInterface8isParkedEv@Base 1.1.0
+ _ZN4INDI13DomeInterface9SetParkedEb@Base 1.1.0
  _ZN4INDI13DomeInterfaceC1Ev@Base 1.0.0
  _ZN4INDI13DomeInterfaceC2Ev@Base 1.0.0
  _ZN4INDI13DomeInterfaceD0Ev@Base 1.0.0
@@ -292,15 +312,16 @@ libindidriver.so.1 libindidriver1 #MINVER#
  _ZN4INDI15FilterInterfaceC2Ev@Base 1.0.0
  _ZN4INDI15FilterInterfaceD1Ev@Base 1.0.0
  _ZN4INDI15FilterInterfaceD2Ev@Base 1.0.0
+ _ZN4INDI15GuiderInterface13GuideCompleteE12INDI_EQ_AXIS@Base 1.1.0
  _ZN4INDI15GuiderInterface20initGuiderPropertiesEPKcS2_@Base 1.0.0
  _ZN4INDI15GuiderInterface23processGuiderPropertiesEPKcPdPPci@Base 1.0.0
  _ZN4INDI15GuiderInterfaceC1Ev@Base 1.0.0
  _ZN4INDI15GuiderInterfaceC2Ev@Base 1.0.0
  _ZN4INDI15GuiderInterfaceD1Ev@Base 1.0.0
  _ZN4INDI15GuiderInterfaceD2Ev@Base 1.0.0
- _ZN4INDI16FocuserInterface11MoveFocuserENS0_14FocusDirectionEii@Base 1.0.0
+ _ZN4INDI16FocuserInterface11MoveFocuserENS0_14FocusDirectionEit@Base 1.1.0
  _ZN4INDI16FocuserInterface12AbortFocuserEv@Base 1.0.0
- _ZN4INDI16FocuserInterface14MoveAbsFocuserEi@Base 1.0.0
+ _ZN4INDI16FocuserInterface14MoveAbsFocuserEj@Base 1.1.0
  _ZN4INDI16FocuserInterface14MoveRelFocuserENS0_14FocusDirectionEj@Base 1.0.0
  _ZN4INDI16FocuserInterface15SetFocuserSpeedEi@Base 1.0.0
  _ZN4INDI16FocuserInterface20SetFocuserCapabilityEPNS0_17FocuserCapabilityE@Base 1.0.0
@@ -321,6 +342,7 @@ libindidriver.so.1 libindidriver1 #MINVER#
  _ZN4INDI3CCD12UpdateCCDBinEii@Base 1.0.0
  _ZN4INDI3CCD12getFileIndexEPKcS2_S2_@Base 1.0.0
  _ZN4INDI3CCD13AbortExposureEv@Base 1.0.0
+ _ZN4INDI3CCD13GuideCompleteE12INDI_EQ_AXIS@Base 1.1.0
  _ZN4INDI3CCD13ISSnoopDeviceEP8_xml_ele@Base 1.0.0
  _ZN4INDI3CCD13StartExposureEf@Base 1.0.0
  _ZN4INDI3CCD14SetTemperatureEd@Base 1.0.0
@@ -351,6 +373,16 @@ libindidriver.so.1 libindidriver1 #MINVER#
  _ZN4INDI3CCDD0Ev@Base 1.0.0
  _ZN4INDI3CCDD1Ev@Base 1.0.0
  _ZN4INDI3CCDD2Ev@Base 1.0.0
+ _ZN4INDI3GPS11ISNewSwitchEPKcS2_P7ISStatePPci@Base 1.1.0
+ _ZN4INDI3GPS14initPropertiesEv@Base 1.1.0
+ _ZN4INDI3GPS16updatePropertiesEv@Base 1.1.0
+ _ZN4INDI3GPS8TimerHitEv@Base 1.1.0
+ _ZN4INDI3GPS9updateGPSEv@Base 1.1.0
+ _ZN4INDI3GPSC1Ev@Base 1.1.0
+ _ZN4INDI3GPSC2Ev@Base 1.1.0
+ _ZN4INDI3GPSD0Ev@Base 1.1.0
+ _ZN4INDI3GPSD1Ev@Base 1.1.0
+ _ZN4INDI3GPSD2Ev@Base 1.1.0
  _ZN4INDI4Dome11GetTargetAzERdS1_S1_S1_@Base 1.0.0
  _ZN4INDI4Dome11ISNewNumberEPKcS2_PdPPci@Base 1.0.0
  _ZN4INDI4Dome11ISNewSwitchEPKcS2_P7ISStatePPci@Base 1.0.0
@@ -401,6 +433,7 @@ libindidriver.so.1 libindidriver1 #MINVER#
  (arch=sh4)_ZN4INDI6Logger5printEPKcjRKSsiS2_z@Base 1.0.0
  (arch=!sh4)_ZN4INDI6Logger8logFile_B5cxx11E@Base 1.0.0
  (arch=sh4)_ZN4INDI6Logger8logFile_E@Base 1.0.0
+ _ZN4INDI6Logger8nDevicesE@Base 1.1.0
  (arch=!sh4)_ZN4INDI6Logger9configureERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEENS0_11loggerConf_Eii@Base 1.0.0
  (arch=sh4)_ZN4INDI6Logger9configureERKSsNS0_11loggerConf_Eii@Base 1.0.0
  _ZN4INDI6LoggerC1Ev@Base 1.0.0
@@ -422,6 +455,26 @@ libindidriver.so.1 libindidriver1 #MINVER#
  _ZN4INDI7FocuserD0Ev@Base 1.0.0
  _ZN4INDI7FocuserD1Ev@Base 1.0.0
  _ZN4INDI7FocuserD2Ev@Base 1.0.0
+ _ZN4INDI7Weather11ISNewNumberEPKcS2_PdPPci@Base 1.1.0
+ _ZN4INDI7Weather11ISNewSwitchEPKcS2_P7ISStatePPci@Base 1.1.0
+ _ZN4INDI7Weather12addParameterENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEdddd@Base 1.1.0
+ _ZN4INDI7Weather13ISSnoopDeviceEP8_xml_ele@Base 1.1.0
+ _ZN4INDI7Weather13updateWeatherEv@Base 1.1.0
+ _ZN4INDI7Weather14initPropertiesEv@Base 1.1.0
+ _ZN4INDI7Weather14syncParametersEv@Base 1.1.0
+ _ZN4INDI7Weather14updateLocationEddd@Base 1.1.0
+ _ZN4INDI7Weather15saveConfigItemsEP8_IO_FILE@Base 1.1.0
+ _ZN4INDI7Weather16updatePropertiesEv@Base 1.1.0
+ _ZN4INDI7Weather18updateWeatherStateEv@Base 1.1.0
+ _ZN4INDI7Weather19processLocationInfoEddd@Base 1.1.0
+ _ZN4INDI7Weather20createParameterRangeENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE@Base 1.1.0
+ _ZN4INDI7Weather20setCriticalParameterENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE@Base 1.1.0
+ _ZN4INDI7Weather8TimerHitEv@Base 1.1.0
+ _ZN4INDI7WeatherC1Ev@Base 1.1.0
+ _ZN4INDI7WeatherC2Ev@Base 1.1.0
+ _ZN4INDI7WeatherD0Ev@Base 1.1.0
+ _ZN4INDI7WeatherD1Ev@Base 1.1.0
+ _ZN4INDI7WeatherD2Ev@Base 1.1.0
  _ZN4INDI8Property10setDynamicEb@Base 1.0.0
  _ZN4INDI8Property11setPropertyEPv@Base 1.0.0
  _ZN4INDI8Property12getGroupNameEv@Base 1.0.0
@@ -432,7 +485,7 @@ libindidriver.so.1 libindidriver1 #MINVER#
  _ZN4INDI8Property7getBLOBEv@Base 1.0.0
  _ZN4INDI8Property7getNameEv@Base 1.0.0
  _ZN4INDI8Property7getTextEv@Base 1.0.0
- _ZN4INDI8Property7setTypeE9INDI_TYPE@Base 1.0.0
+ _ZN4INDI8Property7setTypeE18INDI_PROPERTY_TYPE@Base 1.1.0
  _ZN4INDI8Property8getLabelEv@Base 1.0.0
  _ZN4INDI8Property8getLightEv@Base 1.0.0
  _ZN4INDI8Property8getStateEv@Base 1.0.0
@@ -446,22 +499,48 @@ libindidriver.so.1 libindidriver1 #MINVER#
  _ZN4INDI9Telescope10updateTimeEP7ln_dated@Base 1.0.0
  _ZN4INDI9Telescope11ISNewNumberEPKcS2_PdPPci@Base 1.0.0
  _ZN4INDI9Telescope11ISNewSwitchEPKcS2_P7ISStatePPci@Base 1.0.0
+ _ZN4INDI9Telescope11SetSlewRateEi@Base 1.1.0
+ _ZN4INDI9Telescope11processNSWEEdd@Base 1.1.0
+ _ZN4INDI9Telescope12GetAxis1ParkEv@Base 1.1.0
+ _ZN4INDI9Telescope12GetAxis2ParkEv@Base 1.1.0
+ _ZN4INDI9Telescope12LoadParkDataEv@Base 1.1.0
+ _ZN4INDI9Telescope12SetAxis1ParkEd@Base 1.1.0
+ _ZN4INDI9Telescope12SetAxis2ParkEd@Base 1.1.0
+ _ZN4INDI9Telescope12buttonHelperEPKc7ISStatePv@Base 1.1.0
  _ZN4INDI9Telescope13ISSnoopDeviceEP8_xml_ele@Base 1.0.0
+ _ZN4INDI9Telescope13WriteParkDataEv@Base 1.1.0
+ _ZN4INDI9Telescope13processButtonEPKc7ISState@Base 1.1.0
+ _ZN4INDI9Telescope14SetCurrentParkEv@Base 1.1.0
+ _ZN4INDI9Telescope14SetDefaultParkEv@Base 1.1.0
  _ZN4INDI9Telescope14initPropertiesEv@Base 1.0.0
+ _ZN4INDI9Telescope14joystickHelperEPKcddPv@Base 1.1.0
  _ZN4INDI9Telescope14updateLocationEddd@Base 1.0.0
  _ZN4INDI9Telescope15ISGetPropertiesEPKc@Base 1.0.0
+ _ZN4INDI9Telescope15SetParkDataTypeENS0_17TelescopeParkDataE@Base 1.1.0
+ _ZN4INDI9Telescope15processJoystickEPKcdd@Base 1.1.0
+ _ZN4INDI9Telescope15processTimeInfoEPKcS2_@Base 1.1.0
  _ZN4INDI9Telescope15saveConfigItemsEP8_IO_FILE@Base 1.0.0
  _ZN4INDI9Telescope16updatePropertiesEv@Base 1.0.0
+ _ZN4INDI9Telescope18processSlewPresetsEdd@Base 1.1.0
+ _ZN4INDI9Telescope19GetAxis1ParkDefaultEv@Base 1.1.0
+ _ZN4INDI9Telescope19GetAxis2ParkDefaultEv@Base 1.1.0
+ _ZN4INDI9Telescope19SetAxis1ParkDefaultEd@Base 1.1.0
+ _ZN4INDI9Telescope19SetAxis2ParkDefaultEd@Base 1.1.0
+ _ZN4INDI9Telescope19processLocationInfoEddd@Base 1.1.0
  _ZN4INDI9Telescope22SetTelescopeCapabilityEPNS0_19TelescopeCapabilityE@Base 1.0.0
  _ZN4INDI9Telescope4ParkEv@Base 1.0.0
  _ZN4INDI9Telescope4SyncEdd@Base 1.0.0
- _ZN4INDI9Telescope6MoveNSENS0_17TelescopeMotionNSENS0_22TelescopeMotionCommandE@Base 1.0.0
- _ZN4INDI9Telescope6MoveWEENS0_17TelescopeMotionWEENS0_22TelescopeMotionCommandE@Base 1.0.0
- _ZN4INDI9Telescope7ConnectEPKc@Base 1.0.0
+ _ZN4INDI9Telescope6MoveNSE11INDI_DIR_NSNS0_22TelescopeMotionCommandE@Base 1.1.0
+ _ZN4INDI9Telescope6MoveWEE11INDI_DIR_WENS0_22TelescopeMotionCommandE@Base 1.1.0
+ _ZN4INDI9Telescope6UnParkEv@Base 1.1.0
+ _ZN4INDI9Telescope7ConnectEPKct@Base 1.1.0
  _ZN4INDI9Telescope7ConnectEv@Base 1.0.0
+ _ZN4INDI9Telescope8InitParkEv@Base 1.1.0
  _ZN4INDI9Telescope8NewRaDecEdd@Base 1.0.0
  _ZN4INDI9Telescope8TimerHitEv@Base 1.0.0
+ _ZN4INDI9Telescope8isParkedEv@Base 1.1.0
  _ZN4INDI9Telescope9ISNewTextEPKcS2_PPcS4_i@Base 1.0.0
+ _ZN4INDI9Telescope9SetParkedEb@Base 1.1.0
  _ZN4INDI9TelescopeC1Ev@Base 1.0.0
  _ZN4INDI9TelescopeC2Ev@Base 1.0.0
  _ZN4INDI9TelescopeD0Ev@Base 1.0.0
@@ -481,22 +560,6 @@ libindidriver.so.1 libindidriver1 #MINVER#
  _ZN4INDI9USBDeviceD0Ev@Base 1.0.0
  _ZN4INDI9USBDeviceD1Ev@Base 1.0.0
  _ZN4INDI9USBDeviceD2Ev@Base 1.0.0
- (arch=!kfreebsd-any)_ZN5PPort11registerBitEPKvi@Base 1.0.0
- (arch=!kfreebsd-any)_ZN5PPort13unregisterBitEPKvi@Base 1.0.0
- (arch=!kfreebsd-any)_ZN5PPort5resetEv@Base 1.0.0
- (arch=!kfreebsd-any)_ZN5PPort6commitEv@Base 1.0.0
- (arch=!kfreebsd-any)_ZN5PPort6setBitEPKvib@Base 1.0.0
- (arch=!kfreebsd-any)_ZN5PPort7setPortEi@Base 1.0.0
- (arch=!kfreebsd-any)_ZN5PPortC1Ei@Base 1.0.0
- (arch=!kfreebsd-any)_ZN5PPortC1Ev@Base 1.0.0
- (arch=!kfreebsd-any)_ZN5PPortC2Ei@Base 1.0.0
- (arch=!kfreebsd-any)_ZN5PPortC2Ev@Base 1.0.0
- (arch=!kfreebsd-any)_ZN5PPortD1Ev@Base 1.0.0
- (arch=!kfreebsd-any)_ZN5PPortD2Ev@Base 1.0.0
- (arch=!kfreebsd-any)_ZN6port_tC1Ei@Base 1.0.0
- (arch=!kfreebsd-any)_ZN6port_tC2Ei@Base 1.0.0
- (arch=!kfreebsd-any)_ZN6port_tD1Ev@Base 1.0.0
- (arch=!kfreebsd-any)_ZN6port_tD2Ev@Base 1.0.0
  _ZN7CCDChip12setFrameTypeENS_9CCD_FRAMEE@Base 1.0.0
  _ZN7CCDChip12setPixelSizeEff@Base 1.0.0
  _ZN7CCDChip13setInterlacedEb@Base 1.0.0
@@ -521,6 +584,7 @@ libindidriver.so.1 libindidriver1 #MINVER#
  (arch=!kfreebsd-any)_ZN9V4L2_Base10errno_exitEPKcPc@Base 1.0.0
  (arch=!kfreebsd-any)_ZN9V4L2_Base10findMinMaxEv@Base 1.0.0
  (arch=!kfreebsd-any)_ZN9V4L2_Base10getControlEjPdPc@Base 1.0.0
+ _ZN9V4L2_Base10getLinearYEv@Base 1.1.0
  (arch=!kfreebsd-any)_ZN9V4L2_Base10init_userpEj@Base 1.0.0
  (arch=!kfreebsd-any)_ZN9V4L2_Base10query_ctrlEjRdS0_S0_S0_Pc@Base 1.0.0
  (arch=!kfreebsd-any)_ZN9V4L2_Base10read_frameEPc@Base 1.0.0
@@ -557,9 +621,11 @@ libindidriver.so.1 libindidriver1 #MINVER#
  (arch=!kfreebsd-any)_ZN9V4L2_Base16setcaptureformatEjPc@Base 1.0.0
  (arch=!kfreebsd-any)_ZN9V4L2_Base17getcaptureformatsEP22_ISwitchVectorProperty@Base 1.0.0
  (arch=!kfreebsd-any)_ZN9V4L2_Base18enumerate_ext_ctrlEv@Base 1.0.0
+ _ZN9V4L2_Base18setColorProcessingEbbb@Base 1.1.0
  (arch=!kfreebsd-any)_ZN9V4L2_Base4getUEv@Base 1.0.0
  (arch=!kfreebsd-any)_ZN9V4L2_Base4getVEv@Base 1.0.0
  (arch=!kfreebsd-any)_ZN9V4L2_Base4getYEv@Base 1.0.0
+ _ZN9V4L2_Base6getBppEv@Base 1.1.0
  (arch=!kfreebsd-any)_ZN9V4L2_Base6xioctlEiiPv@Base 1.0.0
  (arch=!kfreebsd-any)_ZN9V4L2_Base7setSizeEii@Base 1.0.0
  (arch=!kfreebsd-any)_ZN9V4L2_Base8doDecodeEb@Base 1.0.0
@@ -578,7 +644,6 @@ libindidriver.so.1 libindidriver1 #MINVER#
  (arch=!kfreebsd-any)_ZN9V4L2_BaseD1Ev@Base 1.0.0
  (arch=!kfreebsd-any)_ZN9V4L2_BaseD2Ev@Base 1.0.0
  _ZNK4INDI13DefaultDevice22getInterfaceDescriptorEv@Base 1.0.0
- (arch=!kfreebsd-any)_ZNK5PPort13isRegisterBitEPKvi@Base 1.0.0
  _ZNK7CCDChip8getNAxisEv@Base 1.0.0
  _ZNKSt5ctypeIcE8do_widenEc@Base 1.0.0
  _ZNSt14_Function_base13_Base_managerIPFvPKc7ISStatePvEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation@Base 1.0.0
@@ -640,8 +705,10 @@ libindidriver.so.1 libindidriver1 #MINVER#
  _ZTIN4INDI15GuiderInterfaceE@Base 1.0.0
  _ZTIN4INDI16FocuserInterfaceE@Base 1.0.0
  _ZTIN4INDI3CCDE@Base 1.0.0
+ _ZTIN4INDI3GPSE@Base 1.1.0
  _ZTIN4INDI4DomeE@Base 1.0.0
  _ZTIN4INDI7FocuserE@Base 1.0.0
+ _ZTIN4INDI7WeatherE@Base 1.1.0
  _ZTIN4INDI9TelescopeE@Base 1.0.0
  _ZTIN4INDI9USBDeviceE@Base 1.0.0
  _ZTIPFvPKc7ISStatePvE@Base 1.0.0
@@ -664,8 +731,10 @@ libindidriver.so.1 libindidriver1 #MINVER#
  _ZTSN4INDI15GuiderInterfaceE@Base 1.0.0
  _ZTSN4INDI16FocuserInterfaceE@Base 1.0.0
  _ZTSN4INDI3CCDE@Base 1.0.0
+ _ZTSN4INDI3GPSE@Base 1.1.0
  _ZTSN4INDI4DomeE@Base 1.0.0
  _ZTSN4INDI7FocuserE@Base 1.0.0
+ _ZTSN4INDI7WeatherE@Base 1.1.0
  _ZTSN4INDI9TelescopeE@Base 1.0.0
  _ZTSN4INDI9USBDeviceE@Base 1.0.0
  _ZTSPFvPKc7ISStatePvE@Base 1.0.0
@@ -684,8 +753,10 @@ libindidriver.so.1 libindidriver1 #MINVER#
  _ZTVN4INDI15GuiderInterfaceE@Base 1.0.0
  _ZTVN4INDI16FocuserInterfaceE@Base 1.0.0
  _ZTVN4INDI3CCDE@Base 1.0.0
+ _ZTVN4INDI3GPSE@Base 1.1.0
  _ZTVN4INDI4DomeE@Base 1.0.0
  _ZTVN4INDI7FocuserE@Base 1.0.0
+ _ZTVN4INDI7WeatherE@Base 1.1.0
  _ZTVN4INDI9TelescopeE@Base 1.0.0
  _ZTVN4INDI9USBDeviceE@Base 1.0.0
  addCallback@Base 1.0.0
@@ -740,9 +811,45 @@ libindidriver.so.1 libindidriver1 #MINVER#
  findXMLEle@Base 1.0.0
  from64tobits@Base 1.0.0
  fs_sexa@Base 1.0.0
+ getColorSpaceName@Base 1.1.0
+ getQuantization@Base 1.1.0
+ getQuantizationName@Base 1.1.0
  getSexComponents@Base 1.0.0
+ getYCbCrEncoding@Base 1.1.0
+ getYCbCrEncodingName@Base 1.1.0
+ get_local_hour_angle@Base 1.1.0
+ get_local_sideral_time@Base 1.1.0
+ get_usb_code_for_current_locale@Base 1.1.0
+ hid_close@Base 1.1.0
+ hid_enumerate@Base 1.1.0
+ hid_error@Base 1.1.0
+ hid_exit@Base 1.1.0
+ hid_free_enumeration@Base 1.1.0
+ hid_get_feature_report@Base 1.1.0
+ hid_get_indexed_string@Base 1.1.0
+ hid_get_manufacturer_string@Base 1.1.0
+ hid_get_product_string@Base 1.1.0
+ hid_get_serial_number_string@Base 1.1.0
+ hid_init@Base 1.1.0
+ hid_open@Base 1.1.0
+ hid_open_path@Base 1.1.0
+ hid_read@Base 1.1.0
+ hid_read_timeout@Base 1.1.0
+ hid_send_feature_report@Base 1.1.0
+ hid_set_nonblocking@Base 1.1.0
+ hid_write@Base 1.1.0
+ initColorSpace@Base 1.1.0
  isPropDefined@Base 1.0.0
  lilxmlMalloc@Base 1.0.0
+ linearize@Base 1.1.0
+ lutrangecbcr10@Base 1.1.0
+ lutrangecbcr12@Base 1.1.0
+ lutrangecbcr16@Base 1.1.0
+ lutrangecbcr8@Base 1.1.0
+ lutrangey10@Base 1.1.0
+ lutrangey12@Base 1.1.0
+ lutrangey16@Base 1.1.0
+ lutrangey8@Base 1.1.0
  main@Base 1.0.0
  me@Base 1.0.0
  (arch=!kfreebsd-any)mjpegtoyuv420p@Base 1.0.0
@@ -752,6 +859,7 @@ libindidriver.so.1 libindidriver1 #MINVER#
  newLilXML@Base 1.0.0
  nextXMLAtt@Base 1.0.0
  nextXMLEle@Base 1.0.0
+ (c++)"non-virtual thunk to INDI::CCD::GuideComplete(INDI_EQ_AXIS)@Base" 1.1.0
  (c++)"non-virtual thunk to INDI::CCD::GuideEast(float)@Base" 1.0.0
  (c++)"non-virtual thunk to INDI::CCD::GuideNorth(float)@Base" 1.0.0
  (c++)"non-virtual thunk to INDI::CCD::GuideSouth(float)@Base" 1.0.0
@@ -772,6 +880,11 @@ libindidriver.so.1 libindidriver1 #MINVER#
  permStr@Base 1.0.0
  prXMLEle@Base 1.0.0
  pstateStr@Base 1.0.0
+ range24@Base 1.1.0
+ range360@Base 1.1.0
+ rangeDec@Base 1.1.0
+ rangeHA@Base 1.1.0
+ rangeY8@Base 1.1.0
  readXMLEle@Base 1.0.0
  readXMLFile@Base 1.0.0
  rmCallback@Base 1.0.0

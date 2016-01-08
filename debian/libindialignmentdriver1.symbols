@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 1.0.0 amd64 armel armhf hppa i386 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc ppc64 ppc64el s390x x32
+# SymbolsHelper-Confirmed: 1.1.0 amd64
 libindiAlignmentDriver.so.1 libindialignmentdriver1 #MINVER#
  _ZN4INDI18AlignmentSubsystem10ConvexHull10CheckEulerEiii@Base 1.0.0
  _ZN4INDI18AlignmentSubsystem10ConvexHull10CleanEdgesEv@Base 1.0.0
@@ -82,13 +82,13 @@ libindiAlignmentDriver.so.1 libindialignmentdriver1 #MINVER#
  _ZN4INDI18AlignmentSubsystem20MathPluginManagementD1Ev@Base 1.0.0
  _ZN4INDI18AlignmentSubsystem20MathPluginManagementD2Ev@Base 1.0.0
  _ZN4INDI18AlignmentSubsystem24TelescopeDirectionVector13RotateAroundYEd@Base 1.0.0
- _ZN4INDI18AlignmentSubsystem28AlignmentSubsystemForDrivers14InitPropertiesEPNS_9TelescopeE@Base 1.0.0
- _ZN4INDI18AlignmentSubsystem28AlignmentSubsystemForDrivers20SaveConfigPropertiesEP8_IO_FILE@Base 1.0.0
- _ZN4INDI18AlignmentSubsystem28AlignmentSubsystemForDrivers21ProcessBlobPropertiesEPNS_9TelescopeEPKcPiS6_PPcS8_S8_i@Base 1.0.0
- _ZN4INDI18AlignmentSubsystem28AlignmentSubsystemForDrivers21ProcessTextPropertiesEPNS_9TelescopeEPKcPPcS7_i@Base 1.0.0
  _ZN4INDI18AlignmentSubsystem28AlignmentSubsystemForDrivers22MyDatabaseLoadCallbackEPv@Base 1.0.0
- _ZN4INDI18AlignmentSubsystem28AlignmentSubsystemForDrivers23ProcessNumberPropertiesEPNS_9TelescopeEPKcPdPPci@Base 1.0.0
- _ZN4INDI18AlignmentSubsystem28AlignmentSubsystemForDrivers23ProcessSwitchPropertiesEPNS_9TelescopeEPKcP7ISStatePPci@Base 1.0.0
+ _ZN4INDI18AlignmentSubsystem28AlignmentSubsystemForDrivers23InitAlignmentPropertiesEPNS_9TelescopeE@Base 1.1.0
+ _ZN4INDI18AlignmentSubsystem28AlignmentSubsystemForDrivers29SaveAlignmentConfigPropertiesEP8_IO_FILE@Base 1.1.0
+ _ZN4INDI18AlignmentSubsystem28AlignmentSubsystemForDrivers30ProcessAlignmentBLOBPropertiesEPNS_9TelescopeEPKcPiS6_PPcS8_S8_i@Base 1.1.0
+ _ZN4INDI18AlignmentSubsystem28AlignmentSubsystemForDrivers30ProcessAlignmentTextPropertiesEPNS_9TelescopeEPKcPPcS7_i@Base 1.1.0
+ _ZN4INDI18AlignmentSubsystem28AlignmentSubsystemForDrivers32ProcessAlignmentNumberPropertiesEPNS_9TelescopeEPKcPdPPci@Base 1.1.0
+ _ZN4INDI18AlignmentSubsystem28AlignmentSubsystemForDrivers32ProcessAlignmentSwitchPropertiesEPNS_9TelescopeEPKcP7ISStatePPci@Base 1.1.0
  _ZN4INDI18AlignmentSubsystem28AlignmentSubsystemForDriversC1Ev@Base 1.0.0
  _ZN4INDI18AlignmentSubsystem28AlignmentSubsystemForDriversC2Ev@Base 1.0.0
  _ZN4INDI18AlignmentSubsystem28AlignmentSubsystemForDriversD0Ev@Base 1.0.0
@@ -110,12 +110,9 @@ libindiAlignmentDriver.so.1 libindialignmentdriver1 #MINVER#
  _ZN4INDI18AlignmentSubsystem40TelescopeDirectionVectorSupportFunctionsD2Ev@Base 1.0.0
  _ZNK4INDI18AlignmentSubsystem16InMemoryDatabase26CheckForDuplicateSyncPointERKNS0_22AlignmentDatabaseEntryEd@Base 1.0.0
  _ZNSt6vectorIN4INDI18AlignmentSubsystem22AlignmentDatabaseEntryESaIS2_EE13_M_insert_auxIIRKS2_EEEvN9__gnu_cxx17__normal_iteratorIPS2_S4_EEDpOT_@Base 1.0.0
- (optional=gccinternal)_ZNSt6vectorIN4INDI18AlignmentSubsystem22AlignmentDatabaseEntryESaIS2_EE13_M_insert_auxIIS2_EEEvN9__gnu_cxx17__normal_iteratorIPS2_S4_EEDpOT_@Base 1.0.0
  _ZNSt6vectorIN4INDI18AlignmentSubsystem22AlignmentDatabaseEntryESaIS2_EE13_M_insert_auxIJRKS2_EEEvN9__gnu_cxx17__normal_iteratorIPS2_S4_EEDpOT_@Base 1.0.0
- (optional=gccinternal)_ZNSt6vectorIN4INDI18AlignmentSubsystem22AlignmentDatabaseEntryESaIS2_EE13_M_insert_auxIJS2_EEEvN9__gnu_cxx17__normal_iteratorIPS2_S4_EEDpOT_@Base 1.0.0
  _ZNSt6vectorIN4INDI18AlignmentSubsystem22AlignmentDatabaseEntryESaIS2_EE19_M_emplace_back_auxIIRKS2_EEEvDpOT_@Base 1.0.0
  _ZNSt6vectorIN4INDI18AlignmentSubsystem22AlignmentDatabaseEntryESaIS2_EE19_M_emplace_back_auxIJRKS2_EEEvDpOT_@Base 1.0.0
- (optional=gccinternal)_ZNSt6vectorIN4INDI18AlignmentSubsystem22AlignmentDatabaseEntryESaIS2_EE6insertEN9__gnu_cxx17__normal_iteratorIPKS2_S4_EERS7_@Base 1.0.0
  _ZNSt6vectorIN4INDI18AlignmentSubsystem24TelescopeDirectionVectorESaIS2_EE19_M_emplace_back_auxIIRKS2_EEEvDpOT_@Base 1.0.0
  _ZNSt6vectorIN4INDI18AlignmentSubsystem24TelescopeDirectionVectorESaIS2_EE19_M_emplace_back_auxIJRKS2_EEEvDpOT_@Base 1.0.0
  (optional=templinst)_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE19_M_emplace_back_auxIIRKS5_EEEvDpOT_@Base 1.0.0
@@ -124,8 +121,6 @@ libindiAlignmentDriver.so.1 libindialignmentdriver1 #MINVER#
  (optional=templinst|arch=armel armhf hppa mips mipsel powerpc ppc64 ppc64el)_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE19_M_emplace_back_auxIJS5_EEEvDpOT_@Base 1.0.0
  (optional=templinst)_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EED1Ev@Base 1.0.0
  (optional=templinst)_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EED2Ev@Base 1.0.0
- (optional=gccinternal|arch=!armel !armhf !hppa !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpc !ppc64 !ppc64el !s390x !x32)_ZNSt6vectorISsSaISsEED1Ev@Base 1.0.0
- (optional=gccinternal|arch=!armel !armhf !hppa !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpc !ppc64 !ppc64el !s390x !x32)_ZNSt6vectorISsSaISsEED2Ev@Base 1.0.0
  (optional=templinst|arch=!hppa !x32)_ZNSt8_Rb_treeIdSt4pairIKdPKN4INDI18AlignmentSubsystem22AlignmentDatabaseEntryEESt10_Select1stIS7_ESt4lessIdESaIS7_EE22_M_emplace_hint_uniqueIIRKSt21piecewise_construct_tSt5tupleIIOdEESI_IIEEEEESt17_Rb_tree_iteratorIS7_ESt23_Rb_tree_const_iteratorIS7_EDpOT_@Base 1.0.0
  (optional=templinst|arch=!hppa !x32)_ZNSt8_Rb_treeIdSt4pairIKdPKN4INDI18AlignmentSubsystem22AlignmentDatabaseEntryEESt10_Select1stIS7_ESt4lessIdESaIS7_EE22_M_emplace_hint_uniqueIJRKSt21piecewise_construct_tSt5tupleIJOdEESI_IJEEEEESt17_Rb_tree_iteratorIS7_ESt23_Rb_tree_const_iteratorIS7_EDpOT_@Base 1.0.0
  _ZNSt8_Rb_treeIdSt4pairIKdPKN4INDI18AlignmentSubsystem22AlignmentDatabaseEntryEESt10_Select1stIS7_ESt4lessIdESaIS7_EE24_M_get_insert_unique_posERS1_@Base 1.0.0
@@ -164,8 +159,6 @@ libindiAlignmentDriver.so.1 libindialignmentdriver1 #MINVER#
  _ZTVN4INDI18AlignmentSubsystem20MathPluginManagementE@Base 1.0.0
  _ZTVN4INDI18AlignmentSubsystem28AlignmentSubsystemForDriversE@Base 1.0.0
  _ZTVN4INDI18AlignmentSubsystem31MapPropertiesToInMemoryDatabaseE@Base 1.0.0
- (optional=gccinternal|arch=!armel !armhf !hppa !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpc !ppc64 !ppc64el !s390x !x32)_ZTVN4INDI18AlignmentSubsystem32AlignmentSubsystemForMathPluginsE@Base 1.0.0
- (optional=gccinternal|arch=!armel !armhf !hppa !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpc !ppc64 !ppc64el !s390x !x32)_ZTVN4INDI18AlignmentSubsystem40TelescopeDirectionVectorSupportFunctionsE@Base 1.0.0
  (c++)"non-virtual thunk to INDI::AlignmentSubsystem::AlignmentSubsystemForDrivers::~AlignmentSubsystemForDrivers()@Base" 1.0.0
  (c++)"non-virtual thunk to INDI::AlignmentSubsystem::BasicMathPlugin::~BasicMathPlugin()@Base" 1.0.0
  (c++)"non-virtual thunk to INDI::AlignmentSubsystem::BuiltInMathPlugin::~BuiltInMathPlugin()@Base" 1.0.0

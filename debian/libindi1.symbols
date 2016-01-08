@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 1.0.0 amd64
+# SymbolsHelper-Confirmed: 1.1.0 amd64
 libindi.so.1 libindi1 #MINVER#
  IDLog@Base 1.0.0
  IUFindBLOB@Base 1.0.0
@@ -32,6 +32,8 @@ libindi.so.1 libindi1 #MINVER#
  from64tobits@Base 1.0.0
  fs_sexa@Base 1.0.0
  getSexComponents@Base 1.0.0
+ get_local_hour_angle@Base 1.1.0
+ get_local_sideral_time@Base 1.1.0
  lilxmlMalloc@Base 1.0.0
  nXMLAtt@Base 1.0.0
  nXMLEle@Base 1.0.0
@@ -48,6 +50,10 @@ libindi.so.1 libindi1 #MINVER#
  permStr@Base 1.0.0
  prXMLEle@Base 1.0.0
  pstateStr@Base 1.0.0
+ range24@Base 1.1.0
+ range360@Base 1.1.0
+ rangeDec@Base 1.1.0
+ rangeHA@Base 1.1.0
  readXMLEle@Base 1.0.0
  readXMLFile@Base 1.0.0
  rmXMLAtt@Base 1.0.0
