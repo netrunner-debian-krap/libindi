@@ -1,7 +1,7 @@
-Index: libindi-1.0.0/cmake_modules/FindUSB-1.cmake
+Index: libindi/cmake_modules/FindUSB-1.cmake
 ===================================================================
---- libindi-1.0.0.orig/cmake_modules/FindUSB-1.cmake	2015-07-08 17:51:51.000000000 +0200
-+++ libindi-1.0.0/cmake_modules/FindUSB-1.cmake	2015-07-08 17:53:21.000000000 +0200
+--- libindi.orig/cmake_modules/FindUSB-1.cmake	2016-01-18 15:14:27.504507896 +0100
++++ libindi/cmake_modules/FindUSB-1.cmake	2016-01-18 15:14:27.460509736 +0100
 @@ -46,16 +46,16 @@
    # in cache already
    set(LIBUSB_FOUND TRUE)
@@ -47,10 +47,10 @@ Index: libindi-1.0.0/cmake_modules/FindUSB-1.cmake
          int main() { libusb_error_name(0); return 0; }" ERROR_NAME_COMPILE)
        if (NOT ERROR_NAME_COMPILE)
          add_definitions("-DNO_ERROR_NAME")
-Index: libindi-1.0.0/libs/indibase/indiusbdevice.h
+Index: libindi/libs/indibase/indiusbdevice.h
 ===================================================================
---- libindi-1.0.0.orig/libs/indibase/indiusbdevice.h	2015-07-08 17:51:51.000000000 +0200
-+++ libindi-1.0.0/libs/indibase/indiusbdevice.h	2015-07-08 17:54:25.000000000 +0200
+--- libindi.orig/libs/indibase/indiusbdevice.h	2016-01-18 15:14:27.504507896 +0100
++++ libindi/libs/indibase/indiusbdevice.h	2016-01-18 15:14:27.492508398 +0100
 @@ -1,6 +1,6 @@
  /*******************************************************************************
   Copyright(c) 2011 Gerry Rozema. All rights reserved.
@@ -68,11 +68,11 @@ Index: libindi-1.0.0/libs/indibase/indiusbdevice.h
  #endif
  
  #include "indibase.h"
-Index: libindi-1.0.0/CMakeLists.txt
+Index: libindi/CMakeLists.txt
 ===================================================================
---- libindi-1.0.0.orig/CMakeLists.txt	2015-07-08 17:51:51.000000000 +0200
-+++ libindi-1.0.0/CMakeLists.txt	2015-07-08 17:51:51.000000000 +0200
-@@ -77,6 +77,7 @@
+--- libindi.orig/CMakeLists.txt	2016-01-18 15:14:27.504507896 +0100
++++ libindi/CMakeLists.txt	2016-01-18 15:14:27.500508063 +0100
+@@ -78,6 +78,7 @@
    include_directories(${CFITSIO_INCLUDE_DIR})
  endif (CFITSIO_FOUND)
  
